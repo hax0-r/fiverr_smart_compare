@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="#" class="block px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="#"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="#"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="#"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Services bancaires</a></li>
+            <li><a href="#"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Notre Storyline</a></li>
+            <li><a href="#"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden" style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="#" class="block text-nowrap p-5  transition-all duration-300 text-black bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="#"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="#"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="#"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Services bancaires</a></li>
+            <li><a href="#"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Notre Storyline</a></li>
+            <li><a href="#"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const navBar = document.getElementById('navBar');
+        const resNav = document.getElementById('resNav');
+        const closeNav = document.getElementById('closeNav');
+
+        navBar.addEventListener('click', () => {
+            resNav.style.width = '100%';
+        })
+        closeNav.addEventListener('click', () => {
+            resNav.style.width = '0%';
+        })
+    </script>
+
+    <div class="bg-[#12354b] p-5 md:mt-7 py-12">
+
+        <div class="max-w-5xl w-full mx-auto flex items-center justify-center xl:gap-16 gap-4 flex-wrap">
+            <div
+                class="bg-white max-w-[30rem] md:p-10 p-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                <div class="flex items-center justify-center gap-5">
+                    <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                    <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                            class="font-semibold md:text-2xl text-xl">/10</span>
+                    </h2>
+                </div>
+                <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                    pendant
+                    6 mois</h2>
+                <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                    <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                        frais bancaires</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+                </ul>
+                <div class="flex items-center justify-center mt-7">
+                    <a href="">
+                        <button
+                            class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="bg-white max-w-[30rem] md:p-10 p-5 xl:translate-y-72 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                <div class="flex items-center justify-center gap-5">
+                    <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                    <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                            class="font-semibold md:text-2xl text-xl">/10</span>
+                    </h2>
+                </div>
+                <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                    pendant
+                    6 mois</h2>
+                <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                    <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                        frais bancaires</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+                </ul>
+                <div class="flex items-center justify-center mt-7">
+                    <a href="">
+                        <button
+                            class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-5xl w-full mx-auto xl:mt-24 mt-4">
+            <div
+                class="bg-white max-w-[30rem] md:p-10 p-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                <div class="flex items-center justify-center gap-5">
+                    <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                    <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                            class="font-semibold md:text-2xl text-xl">/10</span>
+                    </h2>
+                </div>
+                <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                    pendant
+                    6 mois</h2>
+                <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                    <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                        frais bancaires</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+                </ul>
+                <div class="flex items-center justify-center mt-7">
+                    <a href="">
+                        <button
+                            class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-[66rem] p-5 md:gap-12 gap-4 md:mt-20 mt-12 w-full mx-auto grid md:grid-cols-2">
+        <div
+            class="bg-[#d9dfdf] max-w-[30rem] md:p-10 mx-auto p-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+            <div class="flex items-center justify-center gap-5">
+                <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                        class="font-semibold md:text-2xl text-xl">/10</span>
+                </h2>
+            </div>
+            <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                pendant
+                6 mois</h2>
+            <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                    frais bancaires</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+            </ul>
+            <div class="flex items-center justify-center mt-7">
+                <a href="">
+                    <button
+                        class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                </a>
+            </div>
+        </div>
+        <div
+            class="bg-[#d9dfdf] max-w-[30rem] md:p-10 p-5 w-full mx-auto rounded-3xl transition-all duration-500 hover:scale-105">
+            <div class="flex items-center justify-center gap-5">
+                <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                        class="font-semibold md:text-2xl text-xl">/10</span>
+                </h2>
+            </div>
+            <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                pendant
+                6 mois</h2>
+            <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                    frais bancaires</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+            </ul>
+            <div class="flex items-center justify-center mt-7">
+                <a href="">
+                    <button
+                        class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                </a>
+            </div>
+        </div>
+        <div
+            class="bg-[#d9dfdf] max-w-[30rem] md:p-10 p-5 w-full mx-auto rounded-3xl transition-all duration-500 hover:scale-105">
+            <div class="flex items-center justify-center gap-5">
+                <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                        class="font-semibold md:text-2xl text-xl">/10</span>
+                </h2>
+            </div>
+            <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                pendant
+                6 mois</h2>
+            <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                    frais bancaires</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+            </ul>
+            <div class="flex items-center justify-center mt-7">
+                <a href="">
+                    <button
+                        class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                </a>
+            </div>
+        </div>
+        <div
+            class="bg-[#d9dfdf] max-w-[30rem] md:p-10 p-5 w-full mx-auto rounded-3xl transition-all duration-500 hover:scale-105">
+            <div class="flex items-center justify-center gap-5">
+                <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                        class="font-semibold md:text-2xl text-xl">/10</span>
+                </h2>
+            </div>
+            <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                pendant
+                6 mois</h2>
+            <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                    frais bancaires</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+            </ul>
+            <div class="flex items-center justify-center mt-7">
+                <a href="">
+                    <button
+                        class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                </a>
+            </div>
+        </div>
+        <div
+            class="bg-[#d9dfdf] max-w-[30rem] md:p-10 p-5 w-full mx-auto rounded-3xl transition-all duration-500 hover:scale-105">
+            <div class="flex items-center justify-center gap-5">
+                <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                        class="font-semibold md:text-2xl text-xl">/10</span>
+                </h2>
+            </div>
+            <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                pendant
+                6 mois</h2>
+            <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                    frais bancaires</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+            </ul>
+            <div class="flex items-center justify-center mt-7">
+                <a href="">
+                    <button
+                        class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                </a>
+            </div>
+        </div>
+        <div
+            class="bg-[#d9dfdf] max-w-[30rem] md:p-10 p-5 w-full mx-auto rounded-3xl transition-all duration-500 hover:scale-105">
+            <div class="flex items-center justify-center gap-5">
+                <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="md:h-40 h-24" alt="">
+                <h2 class="font-bold md:text-5xl text-3xl text-[#224053]">9.6 <span
+                        class="font-semibold md:text-2xl text-xl">/10</span>
+                </h2>
+            </div>
+            <h2 class="font-semibold text-sm text-center my-7 text-[#224053]">50€ offerts + Hello Prime 1 €/mois
+                pendant
+                6 mois</h2>
+            <ul class="text-center space-y-1 mt-10 text-[#0d202c] text-sm font-medium">
+                <li class="text-green-600 font-semibold"><i class="fa-solid fa-medal text-xl"></i>&nbsp; Sans aucuns
+                    frais bancaires</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Compte joint gratuit</li>
+                <li><i class="fa-solid fa-check"></i>&nbsp; Acces agences BNP Paribas</li>
+            </ul>
+            <div class="flex items-center justify-center mt-7">
+                <a href="">
+                    <button
+                        class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-[#12354b] p-5 mt-7 pb-10">
+        <h2 class="md:text-4xl text-3xl font-bold text-center text-white md:py-16 py-8">Nos autres comparatifs</h2>
+        <div
+            class="bg-white border border-[#12354b] rounded-2xl p-8 max-w-[35rem] hover:rotate-6 duration-500 transition-all w-full mx-auto flex items-center justify-center gap-2 flex-col">
+            <i class="fa-solid fa-building-columns text-5xl text-[#224053]"></i>
+            <h2 class="md:text-2xl text-[1.4rem] font-bold text-center text-zinc-700">Comparer les <span
+                    class="text-[#112430]">Banques
+                    Pros</span></h2>
+        </div>
+        <div
+            class="bg-white border border-[#12354b]  mt-5 rounded-2xl p-8 max-w-[35rem] hover:rotate-6 duration-500 transition-all w-full mx-auto flex items-center justify-center gap-2 flex-col">
+            <i class="fa-solid fa-suitcase text-5xl text-[#224053]"></i>
+            <h2 class="md:text-2xl text-[1.4rem] font-bold text-center text-zinc-700">Comparer les <span
+                    class="text-[#112430]">Assurances</span></h2>
+        </div>
+    </div>
+
+    <div class="p-5 mb-20">
+
+        <h2 class="md:text-4xl text-3xl font-bold text-center text-zinc-700 md:pt-20 pt-14">Qui est
+            <span class="text-[#112430]">FinanceFinder ?</span>
+        </h2>
+        <p class="max-w-5xl mx-auto text-center mt-7 md:text-lg"><b>FinanceFinder</b>, votre expert en comparaisons en
+            ligne, vous offre des sélections exclusives pour faciliter vos choix et simplifier vos comparaisons d'achats
+            sur internet. Appréciées par des millions d'utilisateurs, nos sélections sont accompagnées d'avis éditoriaux
+            et d'analyses détaillées, vous permettant de prendre des décisions d'achat en ligne éclairées et avisées.
+            Depuis 2019, FinanceFinder a perfectionné son savoir-faire et élargi son champ d'action et ses compétences.
+        </p>
+        <img src="https://static.wixstatic.com/media/67b256_d276a211cc0748eaacb9460316cdd8c1~mv2.png/v1/fill/w_900,h_617,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/67b256_d276a211cc0748eaacb9460316cdd8c1~mv2.png"
+            class="rounded-xl mx-auto max-w-2xl w-full mt-10" alt="">
+
+        <h2 class="md:text-4xl text-2xl font-bold text-center text-zinc-700 pt-20 max-w-xl w-full mx-auto">Avantages des
+            <span class="text-[#112430]">services bancaires </span>en ligne
+        </h2>
+        <div class="flex items-center justify-center mt-7">
+            <a href="">
+                <button
+                    class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-16 py-3 rounded-lg text-white font-medium">Découvrir</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="border-t max-w-7xl p-5 w-full mx-auto mb-5">
+        <div class="flex items-center justify-center px-5">
+            <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center ">
+                <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+                <h1
+                    class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+        </div>
+        <div class="grid md:grid-cols-3 w-full mx-auto gap-3 max-w-6xl md:mt-4 mt-6">
+            <div class="text-center md:text-start">
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-blue-500 hover:underline"> Mentions Légales</a></li>
+                    <li><a href="#" class="text-blue-500 hover:underline"> Conditions Générales</a></li>
+                    <li><a href="#" class="text-blue-500 hover:underline"> Contact</a></li>
+                </ul>
+            </div>
+            <div class="md:col-span-2 text-center md:text-start md:mt-0 mt-4">
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-blue-400 hover:underline">contact@financefinder.fr</a></li>
+                    <li><a href="#" class="text-blue-500 hover:underline">© 2024 par FinanceFinder</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
