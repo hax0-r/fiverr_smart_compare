@@ -16,6 +16,27 @@
 
 <body>
 
+
+    <!-- components -->
+
+    <div id="popup"
+        class="p-5 closePopup transition-all duration-500 gap-3 bg-white z-30 md:flex hidden items-center justify-center w-full fixed left-0 bottom-0 ">
+        Nous utilisons des cookies pour comprendre comment vous interagissez
+        avec notre site. En acceptant, vous consentez à notre utilisation de ces cookies. Politique de confidentialité
+        <button
+            class="bg-[#0d202c] closePopup border-2 border-[#0d202c] text-nowrap transition-all duration-500 bg-transparent text-[#0d202c] px-7 py-3 rounded-lg font-medium">
+            Tout refuser
+        </button>
+        <button
+            class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:opacity-85 px-7 py-3 rounded-lg text-white font-medium">
+            Accepter
+        </button>
+    </div>
+
+
+
+    <!-- components -->
+
     <div class="flex items-center lg:justify-center justify-between px-5">
         <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
             <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
@@ -28,21 +49,22 @@
     <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
 
         <ul class="flex items-center justify-center">
-            <li><a href="#" class="block px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50 pl-14">
+            <li><a href="./banque.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50 pl-14">
                     Banque</a></li>
             <li><a href="#"
                     class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Pour les Pros</a></li>
-            <li><a href="#"
+            <li><a href="./Assurances.html"
                     class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Assurances</a></li>
-            <li><a href="#"
+            <li><a href="./Services-bancaires.html"
                     class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Services bancaires</a></li>
-            <li><a href="#"
+            <li><a href="./Notre-Storyline.html"
                     class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Notre Storyline</a></li>
-            <li><a href="#"
+            <li><a href="./Contact.html"
                     class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Contact</a></li>
         </ul>
@@ -50,7 +72,8 @@
 
     </div>
 
-    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden" style="width: 0;">
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
         <div class="flex items-center justify-between">
             <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
                 <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
@@ -62,38 +85,26 @@
             </div>
         </div>
         <ul class="mt-7">
-            <li><a href="#" class="block text-nowrap p-5  transition-all duration-300 text-black bg-zinc-50 ">
+            <li><a href="./banque.html"
+                    class="block text-nowrap p-5  transition-all duration-300 text-black bg-zinc-50 ">
                     Banque</a></li>
-            <li><a href="#"
+            <li><a href="./Pour-les-Pros.html"
                     class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Pour les Pros</a></li>
-            <li><a href="#"
+            <li><a href="./Assurances.html"
                     class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Assurances</a></li>
-            <li><a href="#"
+            <li><a href="./Services-bancaires.html"
                     class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Services bancaires</a></li>
-            <li><a href="#"
+            <li><a href="./Notre-Storyline.html"
                     class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Notre Storyline</a></li>
-            <li><a href="#"
+            <li><a href="./Contact.html"
                     class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Contact</a></li>
         </ul>
     </div>
-
-    <script>
-        const navBar = document.getElementById('navBar');
-        const resNav = document.getElementById('resNav');
-        const closeNav = document.getElementById('closeNav');
-
-        navBar.addEventListener('click', () => {
-            resNav.style.width = '100%';
-        })
-        closeNav.addEventListener('click', () => {
-            resNav.style.width = '0%';
-        })
-    </script>
 
     <div class="bg-[#12354b] p-5 md:mt-7 py-12">
 
@@ -377,15 +388,18 @@
         <div class="grid md:grid-cols-3 w-full mx-auto gap-3 max-w-6xl md:mt-4 mt-6">
             <div class="text-center md:text-start">
                 <ul class="space-y-3">
-                    <li><a href="#" class="text-blue-500 hover:underline"> Mentions Légales</a></li>
-                    <li><a href="#" class="text-blue-500 hover:underline"> Conditions Générales</a></li>
-                    <li><a href="#" class="text-blue-500 hover:underline"> Contact</a></li>
+                    <li><a href="./Mentions-Légales.html" class="text-blue-500 hover:underline"> Mentions Légales</a>
+                    </li>
+                    <li><a href="./Mentions-Légales.html" class="text-blue-500 hover:underline"> Conditions
+                            Générales</a></li>
+                    <li><a href="./Contact.html" class="text-blue-500 hover:underline"> Contact</a></li>
                 </ul>
             </div>
             <div class="md:col-span-2 text-center md:text-start md:mt-0 mt-4">
                 <ul class="space-y-3">
-                    <li><a href="#" class="text-blue-400 hover:underline">contact@financefinder.fr</a></li>
-                    <li><a href="#" class="text-blue-500 hover:underline">© 2024 par FinanceFinder</a></li>
+                    <li><a href="mailto:contact@financefinder.fr"
+                            class="text-blue-400 hover:underline">contact@financefinder.fr</a></li>
+                    <li><a class="text-blue-500">© 2024 par FinanceFinder</a></li>
                 </ul>
             </div>
         </div>
@@ -396,6 +410,18 @@
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="./Docs/Javascripts/global.js"></script>
+    <script src="./Docs/Javascripts/navbar.js"></script>
+
+    <script>
+        const closePopupButtons = document.getElementsByClassName("closePopup");
+        const popup = document.getElementById("popup");
+
+        Array.from(closePopupButtons).forEach(button => {
+            button.addEventListener('click', () => {
+                popup.style.transform = "translateY(100%)";
+            });
+        });
+    </script>
 </body>
 
 </html>
