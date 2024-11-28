@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../banque.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis FinanceFinder sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/hello.avif" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full border-[#fff] transition-all duration-500 hover:opacity-70 px-16 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Hello Bank</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Reconnue comme la première banque digitale mobile en Europe, Hello bank!
+                    s'inscrit dans la nouvelle génération innovante des banques en ligne. Proposant une transparence
+                    totale et une gestion ultra-simple de vos finances, Hello bank! compte désormais plusieurs millions
+                    de clients et affiche une croissance continue. Il est maintenant opportun pour vous d'explorer et de
+                    profiter de tous les avantages et produits bancaires offerts par Hello bank! </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-6xl w-full mx-auto grid md:grid-cols-2 grid-cols-1 gap-5 ">
+
+            <div class="">
+                <h2 class="text-5xl font-semibold">+</h2>
+                <ul class="md:mt-5 mt-1 space-y-3 list-disc pl-5">
+                    <li>La première banque digitale mobile en Europe</li>
+                    <li>Accès aux boutiques physiques de BNP Paribas disponible</li>
+                    <li>Large diversité d'offres à disposition</li>
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="text-5xl font-semibold">-</h2>
+                <ul class="md:mt-5 mt-1 space-y-3 list-disc pl-5">
+                    <li>Service clientèle peu performant</li>
+                    <li>Obligation de versement initial de 10€</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Caractéristiques, frais et coûts</h2>
+        <p class="text-zinc-600">Faites vos adieux aux frais bancaires excessifs et aux coûts croissants de chaque
+            transaction, car c'est là
+            l'énorme avantage des banques en ligne. Chez Hello bank!, toutes les opérations et tous les frais sont
+            entièrement gratuits : </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Comparez les offres de cartes bancaires</h2>
+        <p class="text-zinc-600">Hello bank! propose quatre offres distinctes, chacune comprenant une carte bancaire
+            différente, et le tout sans engagement :
+            <br><br>
+            Hello bank! propose également les mêmes deux cartes pour les comptes joints exclusivement : la carte Visa
+            Hello One Duo et la carte Visa Prime Duo. Cependant, la carte Visa Prime Duo aura un coût de 8€ par mois.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Comparez les offres de cartes bancaires</h2>
+            <p class="text-zinc-100 md:leading-7">Fini les longues attentes à la banque et les incessants allers-retours
+                pour fournir les documents manquants. Avec Hello bank!, vous avez la possibilité de soumettre les
+                documents demandés directement en ligne, éliminant ainsi les tracas. De plus, seule une pièce
+                d'identité, une preuve de domicile, votre RIB, et un justificatif de revenus (à l'exception des offres
+                Hello One) sont requis. En résumé, ce sont des documents que vous avez déjà chez vous, que vous pouvez
+                photographier avec votre téléphone, et qui ne nécessitent aucun déplacement. Hello bank! vous offre même
+                la possibilité de différer l'envoi dans le cas où vous n'auriez pas tous les documents immédiatement
+                disponibles. Une fois que tous les documents ont été soumis, prévoyez environ deux semaines pour
+                recevoir votre identification et votre code client, vous permettant ainsi de profiter de votre nouveau
+                compte et d'utiliser votre nouvelle carte.
+            </p>
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Application mobile</h2>
+            <p class="text-zinc-100 md:leading-7">L'application mobile est intuitive et extrêmement facile à utiliser.
+                Plus besoin de consacrer des heures à comprendre son fonctionnement. En quelques minutes, vous la
+                maîtriserez parfaitement. De plus, depuis l'application, vous avez un contrôle total sur votre compte
+                bancaire et vos finances. Des virements aux modifications de plafonds, l'application vous donne le
+                pouvoir de tout gérer. Il est même possible de changer instantanément de devise et de payer avec une
+                monnaie locale lorsque vous êtes à l'étranger. Fini le besoin de retirer de l'argent et de rechercher le
+                taux de change le plus avantageux !
+            </p>
+
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10  text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Produits bancaires</h2>
+            <p class="text-zinc-100 md:leading-7">Comme toutes les banques, Hello bank! met à votre disposition une
+                variété de produits bancaires complémentaires, adaptés à vos besoins, en plus de vos comptes et cartes
+                bancaires :
+                <br><br>
+                Livrets d'épargne avec des taux attractifs
+               <br>&#8901; Crédits immobiliers, à la consommation et auto à des taux compétitifs pour ses clients
+               <br>&#8901; Des assurances pour assurer la protection de votre famille et de vos biens
+               <br>&#8901; Ainsi que des possibilités de placements boursiers et d'investissements en ligne.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Conditions bancaires</h2>
+        <p class="text-zinc-600">Cependant, l'accès à toutes ces offres est soumis à certaines conditions. En effet, Hello bank! représente à la fois une économie financière et temporelle, tout en offrant un service de qualité. Afin de bénéficier de ces avantages, Hello bank! exige un revenu minimum de 1000€ par mois pour l'offre "HelloPrime". En cas d'ouverture d'un compte joint, ce montant minimum de revenus est donc doublé pour ces offres. De plus, un versement initial de 10€ est requis lors de l'ouverture du compte. Il est important de noter que vous pourrez récupérer intégralement cette somme par la suite. Cependant, c'est une exigence de "Hello Bank!" pour accéder à ces avantages prestigieux et gratuits.
+        </p>
+    </div>
+    
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Service Client</h2>
+            <p class="text-zinc-100 md:leading-7">Comme toutes les banques, Hello bank! met à votre disposition une
+                variété de produits bancaires complémentaires, adaptés à vos besoins, en plus de vos comptes et cartes
+                bancaires :
+            </p>
+            
+        </div>
+    </div>
+    
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Avantages de Hello Bank</h2>
+        <p class="text-zinc-600">Cependant, l'accès à toutes ces offres est soumis à certaines conditions. En effet, Hello bank! représente à la fois une économie financière et temporelle, tout en offrant un service de qualité. Afin de bénéficier de ces avantages, Hello bank! exige un revenu minimum de 1000€ par mois pour l'offre "HelloPrime". En cas d'ouverture d'un compte joint, ce montant minimum de revenus est donc doublé pour ces offres. De plus, un versement initial de 10€ est requis lors de l'ouverture du compte. Il est important de noter que vous pourrez récupérer intégralement cette somme par la suite. Cependant, c'est une exigence de "Hello Bank!" pour accéder à ces avantages prestigieux et gratuits.
+        </p>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>
