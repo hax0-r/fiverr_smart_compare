@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="./index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="./banque.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 text-black bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="bg-[#12354b] p-5 md:mt-10 py-12">
+
+        <div class="max-w-6xl mx-auto w-full">
+
+            <h2 class="text-white font-medium text-lg">Les avantages de l'utilisation des services bancaires en ligne
+            </h2>
+            <br>
+            <p class="text-zinc-300">Les banques en ligne attirent de plus en plus l'attention en raison de leurs
+                nombreux avantages par
+                rapport aux institutions bancaires traditionnelles, offrant ainsi une approche novatrice de la gestion
+                de vos finances. La popularité croissante des banques digitales repose principalement sur deux aspects
+                essentiels : les frais bancaires et la facilité d'utilisation.
+                <br>
+                Les frais bancaires sont pratiquement inexistants et toujours transparents, éliminant ainsi toute
+                surprise désagréable. Toutes les opérations bancaires telles que les virements, prélèvements, retraits,
+                et autres sont entièrement gratuits en France et dans la zone euro. De plus, la carte bancaire et les
+                chéquiers sont fournis gratuitement, assortis d'avantages supplémentaires tels que des assurances
+                voyages ou des promotions partenaires.
+                <br>
+                La gestion de votre compte, de votre budget et de vos dépenses est grandement simplifiée grâce à des
+                applications mobiles innovantes et conviviales. Vous avez ainsi un contrôle total sur vos finances et
+                sur les produits bancaires comme les crédits ou les livrets, que vous pouvez souscrire en ligne en
+                quelques instants. De plus, toutes les transactions, opérations bancaires et prévisions budgétaires
+                peuvent être effectuées en temps réel depuis votre téléphone, tablette ou ordinateur.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="max-w-6xl mx-auto w-full md:my-16 my-6  p-5">
+
+        <h2 class="text-black font-medium text-lg">Les critères de sélection d'une bonne banque en ligne</h2>
+        <br>
+        <p class="text-zinc-700">Bien que les banques en ligne présentent de nombreux avantages par rapport aux banques
+            traditionnelles, elles diffèrent en termes d'innovation, de gratuité et de contrôle sur votre compte
+            bancaire. Il existe une grande variété de banques en ligne, certaines se démarquant des autres. Bien que la
+            plupart proposent les mêmes produits bancaires, la différence réside dans cinq aspects principaux :
+            <br><br>
+            L'application mobile : En tant que principal moyen de gestion et de communication avec la banque,
+            l'application est la caractéristique la plus cruciale d'une banque en ligne. Le choix dépend de l'utilité
+            que vous prévoyez d'en faire et de vos besoins en termes de produits bancaires et de service client.
+            <br><br>
+            Tarifs et frais : L'absence de frais bancaires sur les principales opérations est un avantage majeur des
+            banques en ligne. Certains établissements incluent plus d'opérations dans leurs offres gratuites, tandis que
+            d'autres proposent des forfaits annuels "tout compris".
+            <br><br>
+            Produits bancaires : Bien que toutes les banques en ligne offrent les mêmes produits bancaires, chacune peut
+            présenter des avantages spécifiques sur un produit particulier, que ce soit les crédits, les assurances, les
+            placements financiers ou les livrets d'épargne.
+            <br><br>
+            Présence d'agences : Avec l'avènement des chèques électroniques et des transferts instantanés via des
+            applications ou des SMS, la nécessité d'agences physiques a considérablement diminué. Toutefois, pour
+            certains professionnels nécessitant des dépôts fréquents de chèques ou d'espèces, la proximité d'une agence
+            peut être essentielle.
+            <br><br>
+            Cartes bancaires : Les offres de cartes bancaires varient d'une banque en ligne à une autre. Certaines
+            proposent une seule offre, tandis que d'autres offrent une gamme étendue en fonction de vos revenus, chacune
+            ayant ses propres avantages tels que des assurances voyages ou des services de conciergerie.
+        </p>
+        <br><br>
+        <h2 class="text-black font-medium text-lg">FAQ (Foire aux questions)</h2>
+        <br>
+        <p class="text-zinc-700">​
+            Comment ouvrir un compte bancaire en ligne ? Fini les files d'attente interminables et les déplacements
+            incessants pour fournir des documents manquants ; avec les banques en ligne, tout se fait depuis votre
+            ordinateur ou votre téléphone en quelques minutes.
+            <br><br>
+            Il vous suffit de remplir un formulaire simple avec une signature électronique, puis de télécharger quatre
+            documents différents (justificatif d'identité, de domicile, de revenus, et votre RIB). Vous recevrez ensuite
+            votre nouvelle carte bancaire et vos identifiants dans les 15 jours suivants au plus tard, le délai variant
+            d'une banque à l'autre.
+            <br><br>
+            Les banques les plus prestigieuses peuvent parfois exiger un changement de domiciliation bancaire,
+            c'est-à-dire le transfert de vos revenus mensuels sur votre nouveau compte. Pour certaines, un virement
+            initial pourrait également être requis pour activer votre compte. Une fois la procédure terminée, vous
+            pourrez accéder à votre nouveau compte ainsi qu'à votre offre de bienvenue. L'ouverture d'un compte bancaire
+            en ligne est donc incroyablement simple et rapide.
+            <br><br>
+            En général, le transfert de comptes vers une banque en ligne n'entraîne pas de frais d'indemnisation.
+            Cependant, des frais peuvent être associés à certains services liés au transfert, tels que les frais de
+            clôture de compte ou de transfert de virements automatiques et de prélèvements directs.
+        </p>
+        <br><br>
+        <h2 class="text-black font-medium text-lg">Quelles sont les conditions d'éligibilité et les documents
+            nécessaires pour ouvrir un compte dans une banque en ligne ? Les conditions d'éligibilité varient d'une
+            banque en ligne à une autre : </h2>
+        <br>
+        <p class="text-zinc-700">​
+            La résidence : certaines banques en ligne sont disponibles uniquement en France ou dans certaines régions du
+            monde.
+
+            L'âge : les banques peuvent ne pas être accessibles aux mineurs ou demander un âge minimum.
+
+            <br><br>
+
+            Les revenus/la situation professionnelle : les banques peuvent exiger un certain niveau de revenus ou une
+            situation professionnelle spécifique, voire être informées si vous êtes sans revenu.
+
+            <br><br>
+
+            Les antécédents financiers : par exemple, si vous êtes interdit bancaire ou avez un crédit en cours.
+
+            <br><br>
+
+            Toutes ces conditions seront validées par la banque grâce aux documents nécessaires pour ouvrir un compte :
+
+            <br><br>
+
+            Une pièce d'identité valide : carte d'identité nationale, passeport ou permis de conduire.
+
+            <br><br>
+
+            Une preuve de domicile : facture de services publics ou relevé bancaire indiquant votre nom et adresse
+            actuelle.
+
+            <br><br>
+
+            Un RIB : Relevé d'Identité Bancaire, contenant le numéro de compte et le code banque.
+
+            <br><br>
+
+            Parfois, un justificatif de revenu peut également être demandé, tel qu'un relevé de salaire ou une
+            déclaration de revenus, ainsi qu'un justificatif de situation professionnelle pour obtenir des informations
+            sur votre statut (salarié, travailleur indépendant, etc.) et le nom de votre employeur.
+            <br><br>
+            Quels sont les frais liés à l'utilisation d'une banque en ligne ? Les frais peuvent varier d'une banque à
+            une autre et d'une offre à une autre. Généralement, des frais peuvent s'appliquer aux comptes, retraits,
+            virements, chéquiers, cartes de crédit, etc.
+
+            <br><br>
+
+            Cependant, certains services peuvent également être gratuits.
+
+            <br><br>
+
+            Où et comment déposer mes chèques et espèces ? Le dépôt de chèques peut se faire en ligne, directement dans
+            une agence partenaire de la banque en ligne choisie, ou par voie postale.
+
+            <br><br>
+
+            Pour les espèces, vous pouvez opter pour le dépôt à un guichet automatique mis à votre disposition par la
+            banque en ligne. Il est donc nécessaire de vérifier si la banque en ligne choisie dispose de ces guichets
+            dans votre région. Il est également possible de déposer des espèces dans des établissements partenaires tels
+            que d'autres banques ou des magasins.
+
+            <br><br>
+
+            Est-il possible d'obtenir un crédit auprès d'une banque en ligne ? Cela dépend de la banque et du type de
+            crédit recherché. Toutefois, il est tout à fait possible d'obtenir un crédit personnel via certaines banques
+            en ligne. Pour découvrir les offres de prêts personnels, prêts auto-moto, crédit travaux et crédits
+            renouvelables, nous vous invitons à visiter ce site.
+        </p>
+
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+    <script src="./Docs/Javascripts/navbar.js"></script>
+    <script src="./Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

@@ -2,103 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Compare</title>
-    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./Docs/Styles/global.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Compare</title>
+        <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+                integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./Docs/Styles/global.css">
+        <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
 
-    <div class="flex items-center lg:justify-center justify-between px-5">
-        <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
-            <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
-            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
-                Smart Compare</h1>
-        </a>
-        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
-    </div>
-
-    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
-
-        <ul class="flex items-center justify-center">
-            <li><a href="./index.html"
-                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 pl-14">
-                    Banque</a></li>
-            <li><a href="./Pour-les-Pros.html"
-                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50">
-                    Pour les Pros</a></li>
-            <li><a href="./Assurances.html"
-                    class="block px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50">
-                    Assurances</a></li>
-            <li><a href="./Services-bancaires.html"
-                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
-                    Services bancaires</a></li>
-            <li><a href="./Notre-Storyline.html"
-                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
-                    Notre Storyline</a></li>
-            <li><a href="./Contact.html"
-                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
-                    Contact</a></li>
-        </ul>
-
-
-    </div>
-
-    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
-        style="width: 0;">
-        <div class="flex items-center justify-between">
-            <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
-                <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
-                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
-                    Smart Compare</h1>
-            </a>
-            <div class="mr-5 mt-5">
-                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
-            </div>
+        <div class="flex items-center lg:justify-center justify-between px-5">
+                <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+                        <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+                        <h1
+                                class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                                Smart Compare</h1>
+                </a>
+                <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
         </div>
-        <ul class="mt-7">
-            <li><a href="./banque.html"
-                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
-                    Banque</a></li>
-            <li><a href="./Pour-les-Pros.html"
-                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
-                    Pour les Pros</a></li>
-            <li><a href="./Assurances.html"
-                    class="block text-nowrap p-5  transition-all duration-300 text-black bg-zinc-50 ">
-                    Assurances</a></li>
-            <li><a href="./Services-bancaires.html"
-                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
-                    Services bancaires</a></li>
-            <li><a href="./Notre-Storyline.html"
-                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
-                    Notre Storyline</a></li>
-            <li><a href="./Contact.html"
-                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
-                    Contact</a></li>
-        </ul>
-    </div>
 
-    <h1 class="text-center font-bold md:text-4xl text-2xl mt-14 text-[#19384c]"><span class="text-[#19384cdc]">Les</span> Assurances</h1>
-    
-    <div class="bg-[#12354b] p-5 md:mt-10 py-12">
+        <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
 
-    </div>
-
-    <div id="footer"></div>
+                <ul class="flex items-center justify-center">
+                        <li><a href="./index.html"
+                                        class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                                        Banque</a></li>
+                        <li><a href="./Pour-les-Pros.html"
+                                        class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                                        Pour les Pros</a></li>
+                        <li><a href="./Assurances.html"
+                                        class="block px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50">
+                                        Assurances</a></li>
+                        <li><a href="./Services-bancaires.html"
+                                        class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                                        Services bancaires</a></li>
+                        <li><a href="./Notre-Storyline.html"
+                                        class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                                        Notre Storyline</a></li>
+                        <li><a href="./Contact.html"
+                                        class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                                        Contact</a></li>
+                </ul>
 
 
+        </div>
 
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script src="./Docs/Javascripts/global.js"></script>
-    <script src="./Docs/Javascripts/footer.js"></script>
+        <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+                style="width: 0;">
+                <div class="flex items-center justify-between">
+                        <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                                <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
+                                <h1
+                                        class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                                        Smart Compare</h1>
+                        </a>
+                        <div class="mr-5 mt-5">
+                                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+                        </div>
+                </div>
+                <ul class="mt-7">
+                        <li><a href="./banque.html"
+                                        class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                                        Banque</a></li>
+                        <li><a href="./Pour-les-Pros.html"
+                                        class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                                        Pour les Pros</a></li>
+                        <li><a href="./Assurances.html"
+                                        class="block text-nowrap p-5  transition-all duration-300 text-black bg-zinc-50 ">
+                                        Assurances</a></li>
+                        <li><a href="./Services-bancaires.html"
+                                        class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                                        Services bancaires</a></li>
+                        <li><a href="./Notre-Storyline.html"
+                                        class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                                        Notre Storyline</a></li>
+                        <li><a href="./Contact.html"
+                                        class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                                        Contact</a></li>
+                </ul>
+        </div>
+
+        <h1 class="text-center font-bold md:text-4xl text-3xl mt-14 text-[#19384c]"><span
+                        class="text-[#19384cdc]">Les</span> Assurances</h1>
+
+        <div class="bg-[#12354b] p-5 md:mt-10 mt-8 py-12">
+
+                <div class="grid md:grid-cols-2 grid-cols-1 w-full mx-auto max-w-5xl gap-x-5 md:gap-y-10 gap-y-3">
+                        <div
+                                class="bg-white md:col-span-2 mx-auto max-w-[30rem] md:px-10 md:py-10 py-7 px-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                                <div class="flex items-center justify-center gap-5">
+                                        <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="h-40" alt="">
+                                </div>
+                                <p class="font-medium text-center my-7 text-[#0d202c] ">50€ offerts + Hello
+                                        EasyVie filiale du même groupe EasyBourse, est quant à elle une assurance vie en
+                                        ligne gérée par CNP Assurances depuis 2018. L'épargne est constituée sans frais
+                                        de versement ni frais d'entrée.
+                                </p>
+                                <div class="flex items-center justify-center mt-7">
+                                        <a href="">
+                                                <button
+                                                        class="bg-[#0d202c] border-2 border-[#0d202c] transition-all duration-500 hover:bg-transparent hover:text-[#0d202c] px-14 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                                        </a>
+                                </div>
+                        </div>
+                        <div
+                                class="bg-white max-w-[30rem] md:px-10 py-10 px-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                                <div class="flex items-center justify-center gap-5">
+                                        <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="h-40" alt="">
+                                </div>
+                                <ul class=" max-w-[11.5rem] mx-auto space-y-3.5 mt-8 text-[#0d202c] font-medium">
+
+                                        <li class="font-semibold">
+                                                <a href="" class="hover:underline">
+                                                        <i class="fa-solid fa-heart text-2xl"></i> &nbsp; Allianz
+                                                        Santé
+                                                </a>
+                                        </li>
+
+
+                                        <li class="font-semibold">
+                                                <a href="" class="hover:underline">
+                                                        <i class="fa-solid fa-car text-2xl"></i> &nbsp; Allianz
+                                                        Auto
+                                                </a>
+                                        </li>
+
+
+                                        <li class="font-semibold">
+                                                <a href="" class="hover:underline">
+                                                        <i class="fa-solid fa-house text-2xl"></i> &nbsp; Allianz
+                                                        Habitation
+                                                </a>
+                                        </li>
+
+                                </ul>
+                        </div>
+                        <div
+                                class="bg-white max-w-[30rem] md:px-10 py-10 px-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                                <div class="flex items-center justify-center gap-5">
+                                        <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="h-40" alt="">
+                                </div>
+                                <ul class=" max-w-[17rem] mx-auto space-y-3.5 mt-8 text-[#0d202c] font-medium">
+                                        <li class="font-semibold">
+                                                <a href="" class="hover:underline">
+                                                        <i class="fa-solid fa-heart text-2xl"></i> &nbsp; Direct
+                                                        Assurance Santé
+                                                </a>
+                                        </li>
+
+
+                                        <li class="font-semibold">
+                                                <a href="" class="hover:underline">
+                                                        <i class="fa-solid fa-car text-2xl"></i> &nbsp; Direct Assurance
+                                                        Auto
+                                                </a>
+                                        </li>
+
+
+                                        <li class="font-semibold">
+                                                <a href="" class="hover:underline">
+                                                        <i class="fa-solid fa-house text-2xl"></i> &nbsp; Direct
+                                                        Assurance Habitation
+                                                </a>
+                                        </li>
+
+                                </ul>
+                        </div>
+                        <div
+                                class="bg-white max-w-[30rem] md:p-10 p-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                                <div class="flex items-center justify-center gap-5">
+                                        <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="h-40" alt="">
+                                </div>
+                                <ul class="text-center space-y-3.5 mt-8 text-[#0d202c] font-medium">
+                                        <li class="font-semibold md:my-16 my-10">
+                                                <a href="" class="hover:underline"> Euro Assurance
+                                                </a>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div
+                                class="bg-white max-w-[30rem] md:p-10 p-5 w-full rounded-3xl transition-all duration-500 hover:scale-105">
+                                <div class="flex items-center justify-center gap-5">
+                                        <img src="./Docs/Assets/images/Home/Banks/hello.jpeg" class="h-40" alt="">
+                                </div>
+                                <ul class="text-center space-y-3.5 mt-8 text-[#0d202c] font-medium">
+                                        <li class="font-semibold md:my-16 my-10">
+                                                <a href="" class="hover:underline"> Assurance Vie
+                                                </a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+
+        </div>
+
+        <div id="footer"></div>
+
+
+
+        <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+        <script src="./Docs/Javascripts/global.js"></script>
+        <script src="./Docs/Javascripts/navbar.js"></script>
+        <script src="./Docs/Javascripts/footer.js"></script>
 </body>
 
 </html>
