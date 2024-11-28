@@ -49,10 +49,10 @@
     <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
 
         <ul class="flex items-center justify-center">
-            <li><a href="./banque.html"
+            <li><a href="./index.html"
                     class="block px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50 pl-14">
                     Banque</a></li>
-            <li><a href="#"
+            <li><a href="./Pour-les-Pros.html"
                     class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
                     Pour les Pros</a></li>
             <li><a href="./Assurances.html"
@@ -337,14 +337,14 @@
     <div class="bg-[#12354b] p-5 mt-7 pb-10">
         <h2 class="md:text-4xl text-3xl font-bold text-center text-white md:py-16 py-8">Nos autres comparatifs</h2>
         <div
-            class="bg-white border border-[#12354b] rounded-2xl p-8 max-w-[35rem] hover:rotate-6 duration-500 transition-all w-full mx-auto flex items-center justify-center gap-2 flex-col">
+            class="bg-white border border-[#12354b] rounded-2xl md:p-8 p-5 max-w-[35rem] hover:rotate-6 duration-500 transition-all w-full mx-auto flex items-center justify-center gap-2 flex-col">
             <i class="fa-solid fa-building-columns text-5xl text-[#224053]"></i>
             <h2 class="md:text-2xl text-[1.4rem] font-bold text-center text-zinc-700">Comparer les <span
                     class="text-[#112430]">Banques
                     Pros</span></h2>
         </div>
         <div
-            class="bg-white border border-[#12354b]  mt-5 rounded-2xl p-8 max-w-[35rem] hover:rotate-6 duration-500 transition-all w-full mx-auto flex items-center justify-center gap-2 flex-col">
+            class="bg-white border border-[#12354b]  mt-5 rounded-2xl md:p-8 p-5 max-w-[35rem] hover:rotate-6 duration-500 transition-all w-full mx-auto flex items-center justify-center gap-2 flex-col">
             <i class="fa-solid fa-suitcase text-5xl text-[#224053]"></i>
             <h2 class="md:text-2xl text-[1.4rem] font-bold text-center text-zinc-700">Comparer les <span
                     class="text-[#112430]">Assurances</span></h2>
@@ -376,41 +376,13 @@
         </div>
     </div>
 
-    <div class="border-t max-w-7xl p-5 w-full mx-auto mb-5">
-        <div class="flex items-center justify-center px-5">
-            <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center ">
-                <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
-                <h1
-                    class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
-                    Smart Compare</h1>
-            </a>
-        </div>
-        <div class="grid md:grid-cols-3 w-full mx-auto gap-3 max-w-6xl md:mt-4 mt-6">
-            <div class="text-center md:text-start">
-                <ul class="space-y-3">
-                    <li><a href="./Mentions-Légales.html" class="text-blue-500 hover:underline"> Mentions Légales</a>
-                    </li>
-                    <li><a href="./Mentions-Légales.html" class="text-blue-500 hover:underline"> Conditions
-                            Générales</a></li>
-                    <li><a href="./Contact.html" class="text-blue-500 hover:underline"> Contact</a></li>
-                </ul>
-            </div>
-            <div class="md:col-span-2 text-center md:text-start md:mt-0 mt-4">
-                <ul class="space-y-3">
-                    <li><a href="mailto:contact@financefinder.fr"
-                            class="text-blue-400 hover:underline">contact@financefinder.fr</a></li>
-                    <li><a class="text-blue-500">© 2024 par FinanceFinder</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
+    <div id="footer"></div>
 
 
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="./Docs/Javascripts/global.js"></script>
-    <script src="./Docs/Javascripts/navbar.js"></script>
+    <script src="./Docs/Javascripts/footer.js"></script>
 
     <script>
         const closePopupButtons = document.getElementsByClassName("closePopup");
@@ -419,7 +391,12 @@
         Array.from(closePopupButtons).forEach(button => {
             button.addEventListener('click', () => {
                 popup.style.transform = "translateY(100%)";
+                popup.style.opacity = "0";
+                setTimeout(() => {
+                    popup.style.display = "none";
+                }, 1000)
             });
+
         });
     </script>
 </body>
