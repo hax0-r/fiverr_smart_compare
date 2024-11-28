@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="./index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html" class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 text-black bg-zinc-50 
+                                        ">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="./banque.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600 ">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 text-black bg-zinc-50 ">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="w-full grid md:grid-cols-2 grid-cols-1 justify-center md:gap-0 gap-5 md:mb-16 mb-8 md:flex-row flex-col md:mt-10">
+
+        <div class="md:p-10 p-5 py-10 flex  justify-center flex-col  w-full mx-auto bg-[#12354b]">
+
+            <h2 class="text-white font-semibold mb-10 text-2xl">Contactez-nous</h2>
+            <a class="hover:underline text-white" href="mailto:contact@financefinder.fr">contact@financefinder.fr</a>
+            <div class="flex items-center gap-3 mt-5">
+                <a href=""><i class="fa-brands fa-facebook text-white text-3xl"></i></a>
+                <a href=""><i class="fa-brands fa-instagram text-white text-3xl"></i></a>
+                <a href=""><i class="fa-brands fa-twitter text-white text-3xl"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin text-white text-3xl"></i></a>
+            </div>
+
+        </div>
+        <div class="grid grid-cols-2 gap-5 w-full mx-auto md:p-10 p-5">
+
+            <div class="border-b-2 border-zinc-400">
+                <label for="name" class="text-zinc-600">Prénom</label>
+                <input type="text" id="name" class="block w-full py-2">
+            </div>
+            <div class="border-b-2 border-zinc-400">
+                <label for="name2" class="text-zinc-600">Nom de famille</label>
+                <input type="text" id="name2" class="block w-full py-2">
+            </div>
+            <div class="border-b-2 col-span-2 border-zinc-400">
+                <label for="email" class="text-zinc-600">E-mail*</label>
+                <input type="email" id="email" class="block w-full py-2 " required>
+            </div>
+            <div class="border-b-2 col-span-2 border-zinc-400">
+                <label for="message" class="text-zinc-600">Contacter</label>
+                <textarea name="message" id="" class="w-full resize-none" rows="6"></textarea>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+    <script src="./Docs/Javascripts/navbar.js"></script>
+    <script src="./Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>
