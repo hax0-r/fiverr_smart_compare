@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../banque.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col justify-center items-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/shine.png" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center w-full ">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full border-[#fff] transition-all duration-500 hover:opacity-70 px-16 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Shine</span>
+                    en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Shine est une banque en ligne spécialement créée pour les auto-entrepreneurs et
+                    les entreprises, tout comme Qonto. Elle offre une variété d'options conçues pour les petites et
+                    moyennes entreprises, ainsi que pour les SASU, SAS, EURL et autres types d'entreprises. Afin de
+                    découvrir les prix de Shine et de déterminer si son offre convient réellement aux professionnels,
+                    analysons ses diverses caractéristiques et bénéfices. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Caractéristiques, frais et coûts</h2>
+        <p class="text-zinc-600">Ci-dessous, vous trouverez les offres Solo.
+        </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Comparez les offres de cartes bancaires</h2>
+        <p class="text-zinc-600">Les offres "Équipe" ci-dessous sont spécialement conçues pour les situations où il y a
+            plusieurs associés ou lorsqu'il s'agit d'une TPE ou d'une PME. </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">
+                À partir de 7,90€ par mois</h2>
+            <p class="text-zinc-100 md:leading-7">Le service d'accès complet au compte bancaire Shine est offert à
+                partir de 7,90€ par mois, ce qui est moins cher que de nombreux comptes individuels auprès des banques
+                traditionnelles, qui sont généralement facturés au moins 9€ par mois. En choisissant Shine, les
+                utilisateurs ont l'avantage de :
+
+                <br><br>
+                Le compte professionnel de Shine comprend un relevé d'identité bancaire français, une carte MasterCard,
+                ainsi que des restrictions sur les transferts et les prélèvements entrants et sortants. Il met aussi à
+                disposition un système de facturation, un suivi en temps réel des charges, des notifications pour les
+                délais administratifs et la possibilité d'exporter comptablement sans limitation.
+                <br><br>
+                Toutefois, l'emploi de Shine peut engendrer des frais supplémentaires en fonction des exigences
+                particulières :
+
+                <br>
+                Il faut payer 0,40€ pour chaque virement ou prélèvement au-delà des limites établies.
+
+                <br>
+                Les retraits coûtent 1 €.
+
+                <br>
+                En dehors de la zone euro, les retraits et paiements sont soumis à des frais de 1€ plus 1,90% du montant
+                de la transaction.
+
+                <br>
+                Avec une carte bancaire, il est possible de régler une facture Shine pour 0,20€, en plus de 2,70% du
+                montant de la transaction.
+
+                <br>
+                Il est facturé 10€ pour tout virement ou prélèvement refusé.
+                <br>
+                Les frais de 150€ sont applicables en cas d'activité jugée irrégulière ou en violation des conditions
+                générales d'utilisation de Shine.
+            </p>
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Deux offres pour les indépendants</h2>
+            <p class="text-zinc-100 md:leading-7">Les formules Basic et Plus de Shine ont été spécialement élaborées
+                pour satisfaire les exigences des travailleurs indépendants, des entreprises individuelles et des
+                auto-entrepreneurs. Elles se distinguent par la possibilité d'utiliser une seule carte bancaire et
+                d'effectuer un nombre restreint de transactions (virements, prélèvements, retraits, etc.), ce qui les
+                rend particulièrement adaptées à ceux dont les besoins ne sont pas aussi importants que ceux des
+                entreprises ayant plusieurs associés ou salariés.
+
+                <br><br>
+                La formule économique, offerte à 7,90€ par mois, propose les services indispensables et est
+                principalement destinée aux nouveaux travailleurs indépendants ou à ceux pour qui l'activité
+                professionnelle est secondaire, ne demandant que les fonctionnalités standard.
+
+                <br><br>
+                La formule Plus, qui s'élève à 14,90€ par mois, offre une plus grande variété de transactions
+                autorisées, des retraits et l'encaissement de chèques sans frais supplémentaires, un dépôt d'espèces
+                gratuit chaque mois, des garanties supplémentaires et une assistance téléphonique de qualité supérieure.
+                Cet outil offre la possibilité d'obtenir des recommandations de juristes et de comptables sur
+                différentes interrogations. Cette alternative, plus exhaustive, est conseillée pour ceux qui souhaitent
+                un service plus sophistiqué.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10  text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Deux offres pour les associés et sociétés</h2>
+            <p class="text-zinc-100 md:leading-7">
+                En ce qui concerne les entreprises, il est plus complexe de trouver des alternatives aux comptes
+                bancaires professionnels des établissements traditionnels que pour les indépendants. Étant donné les
+                tarifs élevés des offres des banques traditionnelles, peu de banques en ligne proposent des solutions
+                appropriées. Parallèlement à Shine, d'autres acteurs tels que Qonto ou Anytime Pro se démarquent
+                également sur ce secteur.
+                <br><br>
+                Shine propose un compte professionnel similaire à son offre pour auto-entrepreneurs, avec un compte
+                courant, une carte bancaire, un relevé d'identité bancaire et la possibilité de faire des virements et
+                des prélèvements. Shine Pro offre ses services pour cette catégorie de clients à partir de 29€ par mois.
+                <br><br>
+                Les bénéfices additionnels inclus dans cette offre comprennent :
+
+                <br><br>
+                La disponibilité de deux à cinq cartes bancaires.
+
+                <br><br>
+                Un grand nombre de transactions sont autorisées, telles que les virements, les retraits, les
+                encaissements de chèques et les dépôts d'espèces.
+
+                <br><br>
+                Les frais appliqués sont semblables à ceux des offres pour les auto-entrepreneurs, avec par exemple
+                0,40€ pour chaque virement supérieur à vingt euros inclus gratuitement, et 1€ par retrait.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Comment ouvrir un compte chez Shine ?</h2>
+        <p class="text-zinc-600">Les travailleurs indépendants, les auto-entrepreneurs et les entreprises comme les SAS
+            et SARL peuvent rejoindre Shine.
+
+
+            <br><br>
+
+            Le processus d'ouverture d'un compte est facile et débute en cliquant sur un lien précis.L'employeur doit
+            présenter une pièce d'identité, de même que tous les bénéficiaires réels de l'entreprise.
+
+
+            <br><br>
+
+            Il est également indispensable d'avoir un document confirmant l'existence légale de la société, tel que les
+            statuts ou un extrait Kbis.
+
+
+            <br><br>
+            En fonction du type d'entreprise, il se peut que des documents supplémentaires soient nécessaires.Il
+            convient de souligner que Shine refuse d'accueillir les associations ou les entreprises qui opèrent dans
+            certains domaines, comme les organisations politiques ou religieuses, le courtage en assurance, la vente de
+            tabac ou les pharmacies en ligne.
+
+        </p>
+    </div>
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

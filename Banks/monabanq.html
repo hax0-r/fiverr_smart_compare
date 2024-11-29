@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../banque.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/mona-removebg.png" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Monabanq</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Monabanq offre une vaste gamme de produits qui conviennent à tous ses clients,
+                    sans aucune exigence de revenus, ce qui facilite grandement l'épargne. La banque en ligne Monabanq
+                    est fortement conseillée aux travailleurs temporaires, aux employés, aux retraités, aux cadres et
+                    aux personnes à la recherche d'un emploi. Monabanq est également membre du groupe Crédit Mutuel
+                    Alliance Fédérale et propose des agences pour les dépôts de chèques ou d'espèces.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-6xl w-full mx-auto grid md:grid-cols-2 grid-cols-1 gap-5 ">
+
+            <div class="">
+                <h2 class="text-5xl font-semibold">+</h2>
+                <ul class="md:mt-5 mt-1 space-y-3 list-disc pl-5">
+                    <li>Depuis 4 ans, il a été élu service client de l'année.</li>
+                    <li>Les chèques peuvent être déposés dans les distributeurs du Crédit Mutuel et CIC.</li>
+                    <li>Il n'y a aucune exigence de revenus ni d'engagement.</li>
+                    <li>Découvert autorisé dès l'ouverture du compte, avec une assurance.</li>
+                    <li>Divers produits disponibles : crédits, assurances, épargne...</li>
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="text-5xl font-semibold">-</h2>
+                <ul class="md:mt-5 mt-1 space-y-3 list-disc pl-5">
+                    <li>Cost of intervention</li>
+                    <li>Temps nécessaire pour traiter les transactions</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Caractéristiques, frais et coûts</h2>
+        <p class="text-zinc-600">À la différence des autres banques en ligne, Monabanq n'propose pas de programmes sans
+            frais. Au lieu de cela, Monabanq offre cinq offres très concurrentielles : Pratiq à 2 €, Pratiq+ à 3 €,
+            PatriqPro à partir de 9 €, Uniq à 6 € et Uniq+ à 9 €. Avec ce tarif abordable, vous pouvez bénéficier d'un
+            compte bancaire complet, vous évitant ainsi toute surprise désagréable de frais supplémentaires pour la fin
+            du mois. </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Comparez les offres de cartes bancaires</h2>
+        <p class="text-zinc-600">Monabanq vous permet de sélectionner trois types de comptes courants, ce qui la
+            distingue en tant que seule banque en ligne offrant cette variété.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Comment ouvrir un compte chez MonaBanq</h2>
+            <p class="text-zinc-100 md:leading-7">L'ouverture d'un compte individuel ou d'un compte joint se fait
+                entièrement en ligne, sur le même modèle que les autres banques en ligne. Le processus d'ouverture d'un
+                compte courant sur le site de Monabanq est rapide. Il vous faudra simplement compléter un formulaire en
+                ligne et fournir des photos ou des scans d'un document d'identité, d'un autre document de domicile (un
+                avis d'imposition pour atteindre le compte PratiqPro) et d'un dernier document de revenu. Monabanq aura
+                la possibilité d'adapter et de personnaliser votre compte courant en fonction de vos revenus grâce à ces
+                informations. Afin de terminer la procédure d'ouverture de compte, il sera nécessaire de réaliser un
+                premier dépôt d'au moins 150 €. Bien sûr, votre argent sera disponible une fois que votre compte sera
+                enregistré.
+                <br><br>
+                Si vous avez l'intention de changer de banque, que ce soit pour un déménagement ou simplement pour
+                diminuer vos dépenses bancaires, Monabanq offre un service de mobilité bancaire. Le processus de
+                changement de banque est grandement simplifié grâce à ces nouveaux services de mobilité bancaire. Il
+                n'est plus nécessaire de mettre à jour vos adresses de facturation ou votre relevé d'identité bancaire
+                auprès de chaque institution. Monabanq prend en charge tous vos besoins. Pour en profiter, il vous
+                faudra simplement envoyer un mandat signé ainsi que votre ancien RIB par courrier électronique... et
+                c'est tout! Monabanq assure toute la transition, et chaque paiement ou virement sera également transféré
+                vers votre compte bancaire nouvellement créé. Si vous êtes préoccupé par la complexité de cette
+                procédure, sachez que le changement de banque est maintenant extrêmement facile.
+            </p>
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Application mobile</h2>
+            <p class="text-zinc-100 md:leading-7">Monabanq offre un espace client en ligne et une application mobile
+                afin de rendre la gestion de votre compte plus facile. Depuis cet espace client, vous avez la
+                possibilité de réaliser toutes les opérations bancaires requises, de gérer votre argent de manière
+                aisée, d'accéder aux divers produits bancaires et de communiquer avec un conseiller via le chat.
+
+                <br><br>
+
+                Récemment, de nouvelles caractéristiques ont été mises en place, comme la localisation géographique des
+                distributeurs du CIC et du Crédit Mutuel, la « Confirmation Mobile » pour garantir la sécurité de
+                certaines opérations, la visualisation des relevés de compte électroniques, ainsi que la gestion des
+                cartes bancaires.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10  text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Produits bancaires</h2>
+            <p class="text-zinc-100 md:leading-7">La carte Visa Premier est disponible sans restriction de revenus et
+                offre une gamme de garanties complètes, telles que :
+                <br><br>
+                &#8901;Véhicule de location avec garantie
+                <br>&#8901;Protection des dépenses médicales à l'étranger
+                <br>&#8901;Aide pour le rapatriement
+                <br>&#8901;Couverture neige et montagne
+            </p>
+            <br>
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">La carte Visa Classic :</h2>
+            <p class="text-zinc-100 md:leading-7">La carte Visa Classic est accessible sans restriction de revenus et
+                propose tous les avantages d'une carte bleue standard, avec une assurance décès et invalidité et une
+                assurance médicale internationale.
+            </p>
+            <br>
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">La carte à autorisation systématique :</h2>
+            <p class="text-zinc-100 md:leading-7">Cette carte, disponible sans restriction de revenus, offre aux clients
+                de Monabanq la possibilité de gérer leur budget en toute sérénité. Monabanq vérifie la disponibilité des
+                fonds sur le compte courant du client avant d'accepter un paiement ou un retrait.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Conditions bancaires</h2>
+        <p class="text-zinc-600">La particularité de Monabanq, qui en fait la banque en ligne la plus accessible, réside
+            dans le fait qu'elle ne propose pas de conditions de revenus pour ses clients actuels et futurs. Quelle que
+            soit votre situation financière, la banque en ligne vous accueillera de la même façon. En outre, l'ouverture
+            d'un compte chez Monabanq ne nécessite pas de domiciliation de vos revenus, ce qui vous permet de continuer
+            à utiliser votre ancienne banque. Cependant, une fois que vous aurez ouvert votre compte en ligne, vous
+            devrez effectuer un premier virement de 150 € afin de confirmer la procédure. Il est évident que cette somme
+            sera remboursée lors de l'ouverture de votre compte.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Service Client</h2>
+            <p class="text-zinc-100 md:leading-7">Le service client de Monabanq reste indéniablement le plus performant
+                parmi toutes les banques en ligne de renom. En 2023, Monabanq a été récompensé par le prix « Élu Service
+                Client de l'année », ce qui représente sa cinquième victoire consécutive.
+                <br><br>
+                Monabanq offre aussi un accompagnement pour la gestion budgétaire et l'épargne, ainsi qu'une aide pour
+                les déclarations d'impôt. En outre, son service client offre des options en langue des signes et par
+                écrit pour les sourds et les malentendants. Les experts de Monabanq sont accessibles par chat et par
+                téléphone pendant une durée de 13 heures par jour. Il est important de souligner que Monabanq a été
+                récompensée en tant que « Service Client de l'année » en 2018, 2019 et 2020, dans la catégorie « banque
+                en ligne ». Tous ces facteurs positionnent Monabanq comme la banque en ligne qui propose le service
+                client le plus performant.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Avantages de Hello Bank</h2>
+        <p class="text-zinc-600">Monabanq ne se présente pas comme une banque abordable, mais se concentre sur son
+            accessibilité à tous, notamment sur sa volonté de privilégier les personnes plutôt que l'argent. Tout
+            d'abord, ses comptes courants sans frais et sa possibilité pour les auto-entrepreneurs en font la banque
+            privilégiée des micro-entrepreneurs, des étudiants et des travailleurs temporaires. En outre, avec la
+            fonctionnalité gratuite « Carte qui épargne », Monabanq offre la possibilité d'accumuler de l'argent à
+            chaque transaction, ce qui en fait une solution parfaite pour ceux qui rencontrent des problèmes pour gérer
+            leur épargne.
+            <br><br>
+            Toutefois, ce qui fait réellement la différence entre Monabanq et les autres banques en ligne de qualité,
+            c'est principalement la qualité de son service client. Monabanq se distingue en offrant des possibilités de
+            coaching, un soutien financier, une aide lors de la déclaration d'impôts et une accessibilité aux sourds et
+            malentendants, ce qui en fait la banque en ligne qui offre un service client solide à toutes épreuves.
+        </p>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

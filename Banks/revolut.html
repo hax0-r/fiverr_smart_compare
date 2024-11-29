@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../banque.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col justify-center items-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/rebolute.png" class="max-w-[15rem] my-7 w-full mx-auto"
+                    alt="">
+                <div class="flex items-center  justify-center w-full ">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full border-[#fff] transition-all duration-500 hover:opacity-70 px-16 py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Revolut</span>
+                    en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Revolut est l'une des banques numériques les plus renommées en Europe, connue
+                    pour son application mobile et ses tarifs abordables. Grâce à Revolut, il est possible d'effectuer
+                    des transferts d'argent à des taux avantageux, de partager vos factures pour les partager avec
+                    d'autres, de régler vos achats avec votre carte Revolut dans de nombreux pays, peu importe la
+                    devise, de sécuriser vos achats en ligne grâce à des cartes à usage unique disponibles sur
+                    l'application, et même de profiter de réductions sur vos achats auprès de marques partenaires. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-6xl w-full mx-auto grid md:grid-cols-2 grid-cols-1 gap-5 ">
+
+            <div class="">
+                <h2 class="text-5xl font-semibold">+</h2>
+                <ul class="md:mt-5 mt-1 space-y-3 list-disc pl-5">
+                    <li>Compte et carte "Standard" sont offerts sans frais.</li>
+                    <li>Une clientèle représentant plus de 35 millions.</li>
+                    <li>Retraits et paiements internationaux gratuits.</li>
+                    <li>Des bénéfices en matière de réductions et de retours sur des marques de renom.</li>
+                    <li>Achats en ligne en toute sécurité grâce à des cartes à usage unique.</li>
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="text-5xl font-semibold">-</h2>
+                <ul class="md:mt-5 mt-1 space-y-3 list-disc pl-5">
+                    <li>Révélation non autorisée.</li>
+                    <li>Aucun paiement en espèces ou en chèque.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Caractéristiques, frais et coûts</h2>
+        <p class="text-zinc-600">La proposition bancaire de la SG, autrefois la Société Générale, est désignée sous le
+            nom de « Sobrio ». En utilisant Sobrio, vous pouvez profiter d'un compte, d'une carte personnalisée, d'un
+            conseiller spécialisé et d'une assurance quotidienne qui couvre le vol ou la perte de vos clés, documents et
+            moyens de paiement. En outre, bénéficiez d'une garantie constructeur supplémentaire de 2 ans pour tous vos
+            appareils domestiques achetés neufs. </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Comparez les offres de cartes bancaires</h2>
+        <p class="text-zinc-600">Revolut offre une variété de cartes bancaires au design novateur, qui diffèrent en
+            fonction de la formule sélectionnée. Il est possible d'associer chaque carte à Apple Pay ou Google Pay, ce
+            qui permet de faire des achats et de dépenser de l'argent dans toutes les devises avec un taux de change
+            avantageux.
+
+            <br><br> L'offre de Revolut dépasse cette limite. Il est envisageable d'utiliser une carte à usage unique
+            pour effectuer des achats en ligne, ce qui offre une sécurité supplémentaire en évitant de saisir les
+            informations bancaires.
+
+
+            <br><br>
+            Une autre mesure de sécurité lors des achats consiste à recevoir immédiatement des notifications de
+            paiement. Cela offre la possibilité de surveiller attentivement toutes les dépenses, garantissant ainsi que
+            la carte n'est pas utilisée de manière non autorisée.
+
+            <br><br>
+            En plus, chaque transaction effectuée avec votre carte Revolut vous permet de profiter du cashback! Cette
+            option vous permet de bénéficier de remboursements sur vos achats, que ce soit en fonction d'un pourcentage
+            du montant d'achat ou d'une somme fixe prédéfinie. Vous pouvez donc bénéficier de remboursements sur une
+            partie de vos dépenses en utilisant votre carte Revolut chez les partenaires de cette nouvelle banque.
+
+
+
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Comment ouvrir un compte chez Revolut</h2>
+            <p class="text-zinc-100 md:leading-7">Le processus d'ouverture d'un compte chez Revolut se fait entièrement
+                à partir de l'application mobile.
+                <br><br>
+                Une fois que vous avez téléchargé l'application, débutez en indiquant votre numéro de téléphone, puis
+                effectuez une première vérification en envoyant un message. Après avoir passé cette étape, Revolut vous
+                conviera à alimenter votre compte en y ajoutant de l'argent supplémentaire. Le dépôt initial doit être
+                d'au moins 10€, même s'il est possible de le différer.
+                <br><br>
+                Avant d'explorer l'application, il est nécessaire de renseigner vos informations personnelles et de
+                vérifier votre identité. Il est nécessaire de fournir votre nom, prénom, date de naissance, adresse
+                postale et adresse e-mail lors de cette étape.
+                <br><br>
+                Après avoir fourni vos informations, il vous reste à confirmer votre identité. Veuillez vous rendre dans
+                l'onglet « Profil » et choisir « Vérifier son identité ». Dans cette partie, il sera nécessaire de
+                soumettre une photo de votre carte d'identité.
+                <br><br>
+                Vous pouvez créer un compte chez Revolut en seulement quelques minutes. Pour effectuer la commande de
+                votre carte Revolut, vous pouvez accéder à l'onglet « Cartes » de l'application. Vous avez deux choix :
+                opter pour une carte physique ou une carte bancaire virtuelle. Il est important de noter que la commande
+                de votre carte ne sera pas réalisable tant que le premier paiement n'aura pas été effectué.
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Application mobile</h2>
+            <p class="text-zinc-100 md:leading-7">Revolut se présente comme une néo-banque, c'est-à-dire une approche
+                entièrement numérique via une application mobile, contrairement aux banques classiques où l'application
+                est souvent une forme de gestion en ligne.
+                <br><br>
+                Sur le site mobile Revolut, vous avez la faculté de :
+                <br><br>
+                La gestion de votre budget consiste à fixer des limites et à suivre vos dépenses.
+                <br>
+                Utilisez des taux avantageux pour effectuer des transferts internationaux dans plus de 30 devises.
+                <br>
+                Envisager et solliciter de l'aide financière afin de maintenir un équilibre dans vos dépenses.
+                <br>
+                Répartir des factures afin de simplifier les échanges financiers entre amis.
+                <br>
+                Il est recommandé de recevoir des rapports hebdomadaires afin de mieux gérer vos dépenses.​
+                <br>
+                <br>
+                La conception de l'application vise à faciliter son utilisation, la rendant accessible à tous. En outre,
+                vous avez la possibilité de créer un compte en quelques minutes directement depuis l'appli.
+
+
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10  text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Produits bancaires</h2>
+            <p class="text-zinc-100 md:leading-7">
+                Une institution bancaire traditionnelle, la Société Générale (SG), offre une variété de produits
+                financiers :
+                <br>
+                <br>&#8901; Fondamentaux et investissements : livrets d'épargne, épargne logement, assurance vie,
+                investissements en
+                bourse
+                <br>
+                &#8901; Les prêts bancaires comprennent des prêts à la consommation et des prêts immobiliers.
+                <br>
+                &#8901; Assurances : automobile, moto, logement, risques quotidiens, décès, dépendance, santé.
+
+                <br><br>
+                En qualité de client SG, vous avez la possibilité de profiter de taux avantageux et de conditions
+                avantageuses.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Conditions bancaires</h2>
+        <p class="text-zinc-600">La distinction de Revolut par rapport aux autres établissements bancaires réside principalement dans son statut d'application mobile. De cette manière, vous pouvez facilement gérer votre budget et n'importe où en quelques clics. En outre, grâce à Revolut, votre argent n'est ni prêté ni investi, ce qui garantit un recouvrement rapide de votre investissement dans cette application.
+        </p>
+    </div>
+
+    
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>
