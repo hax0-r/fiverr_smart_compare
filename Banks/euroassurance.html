@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/assurance/euro.webp" class="max-w-[15rem] my-7 w-full mx-auto"
+                    alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Euro Assurance
+                        Auto</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Euro-Assurance offre une vaste sélection de produits d'assurance afin de
+                    satisfaire les divers besoins de ses clients. Euro-Assurance, basée sur le principe de
+                    l'accessibilité et de la souplesse, propose des assurances pour les véhicules (voiture, moto,
+                    scooter), l'habitat, la santé, ainsi que des assurances professionnelles et des assurances
+                    domestiques. La société se démarque par sa capacité à offrir des contrats sur mesure, qui
+                    correspondent aux particularités et aux besoins de chaque client, que ce soit en ce qui concerne la
+                    couverture ou le budget.
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Besoin de la meilleure assurance du marché ?
+        </h2>
+        <p class="text-zinc-600">
+            En matière d'assurance, il est essentiel de faire confiance aux experts. Euro Assurance, fort de son
+            expertise, propose différentes formules qui s'adaptent à vos besoins spécifiques. Que vous soyez confronté à
+            des défis liés à l'automobile, à l'habitation, à la santé ou à d'autres aspects de votre vie, Euro Assurance
+            est là pour vous offrir des solutions sur mesure.
+
+            <br><br>
+
+            Nos experts comprennent que chaque individu ou entreprise a ses propres préoccupations et contraintes. C'est
+            pourquoi nous travaillons avec vous pour identifier vos besoins et trouver la formule d'assurance qui vous
+            convient le mieux. Que vous recherchiez une couverture complète avec des options de personnalisation ou une
+            solution plus économique mais efficace, nous avons ce qu'il vous faut.
+
+            <br><br>
+            En optant pour Euro Assurance, vous profitez à la fois de notre expertise dans le domaine de l'assurance et
+            de notre dévouement à vous proposer un service de qualité et des solutions adaptées à vos besoins
+            particuliers. Confiez à nos spécialistes pour vous accompagner tout au long du processus d'assurance et vous
+            procurer la sérénité dont vous avez besoin.
+
+
+
+
+        </p>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Pourquoi choisir Euro Assurance ? </h2>
+        <p class="text-zinc-600">Présent 7 jours sur 7 de 8h30 à 20h30 : Nous sommes conscients que vos besoins en
+            matière d'assurance peuvent se présenter à tout moment. C'est la raison pour laquelle nos spécialistes sont
+            disponibles sept jours sur sept, de 8h30 à 20h30, afin de répondre à vos interrogations, vous accompagner
+            dans le choix de votre assurance et vous aider en cas de sinistre ou de problème.
+
+            <br><br>
+
+            2 - 94% des clients sont contents : Notre principale préoccupation est la satisfaction de nos clients. Notre
+            taux de satisfaction client est très élevé, ce qui démontre notre dévouement à offrir un service de qualité
+            et des solutions d'assurance adaptées. Chez Euro Assurance, notre plus grande récompense est votre
+            satisfaction.
+            <br><br>
+
+            Des formules personnalisables, accessibles à tous et à un prix abordable : Il est évident que chaque
+            situation est particulière. D'où notre offre de formules d'assurance personnalisables qui peuvent être
+            ajustées en fonction de vos besoins particuliers. Que vous soyez une personne physique, un expert ou une
+            entreprise, nous proposons des options adaptées à votre profil et à votre budget. En outre, nos tarifs
+            compétitifs vous assurent une couverture optimale au meilleur prix.
+
+            <br><br>
+
+            4 - Un engagement immédiat : Chez Euro Assurance, nous sommes conscients de l'importance d'une protection
+            d'assurance rapide et performante. C'est la raison pour laquelle nous proposons une offre d'adhésion
+            immédiate à nos assurances. Avec Euro Assurance, il n'est plus nécessaire d'attendre des jours ou des
+            semaines pour être couvert, vous pouvez profiter d'une protection dès maintenant.
+
+            <br><br>
+            En résumé, faire confiance à Euro Assurance signifie bénéficier d'un service client disponible et réactif,
+            d'une satisfaction client élevée, de formules d'assurance flexibles et compétitives, et d'une adhésion
+            immédiate pour une tranquillité d'esprit totale.
+
+
+
+
+        </p>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

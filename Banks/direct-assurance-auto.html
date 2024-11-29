@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/assurance/direct.webp" class="max-w-[15rem] my-7 w-full mx-auto"
+                    alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Direct Assurance
+                        Auto</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Direct Assurance Auto offre une solution d'assurance automobile facile et à
+                    prix abordable. Grâce à des formules souples et adaptables, elle offre une protection contre les
+                    blessures corporelles et matérielles causées par un accident, ainsi que contre les dommages causés
+                    par le vol ou l'incendie. Les personnes protégées ont la possibilité de souscrire en ligne
+                    rapidement et de profiter d'une gestion aisée de leur contrat. Grâce à Direct Assurance Auto, vous
+                    pouvez conduire en toute sérénité.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Direct Assurance Auto en résumé </h2>
+        <p class="text-zinc-600">Direct Assurance Auto occupe une position de premier plan dans le domaine de
+            l'assurance automobile en ligne, proposant une vaste gamme de services qui répondent aux besoins divers des
+            conducteurs. L'objectif de Direct Assurance est de proposer une assurance auto de qualité à des tarifs
+            compétitifs, en tirant parti des bénéfices des technologies numériques pour rendre les processus plus
+            simples et plus rapides pour ses clients.
+
+            <br><br>
+
+            Ils proposent différentes options d'assurance auto, allant de l'assurance au tiers, la plus basique, à des
+            formules tous risques, garantissant une protection optimale. Ces propositions sont élaborées pour s'ajuster
+            aux divers profils de conducteurs, peu importe leur budget et leurs exigences particulières en matière de
+            sécurité automobile. De plus, Direct Assurance offre une variété d'options supplémentaires en plus de ces
+            formules.
+        </p>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Point positif de ce nouveau produit voiture ?</h2>
+        <p class="text-zinc-600">Spécialiste de l'assurance automobile directe : Grâce à son solide historique et à son
+            expertise reconnue dans le secteur de l'assurance auto directe, Direct Assurance occupe une position de
+            premier plan sur le marché.
+            <br><br>
+            800 000 personnes sont contentes : Nos clients sont notre principale source de confiance. Grâce à notre
+            engagement envers plus de 800 000 clients, vous pouvez être certain de profiter d'un service de haute
+            qualité.
+            <br><br>
+
+            Non seulement nous proposons des tarifs compétitifs, mais nous proposons également une variété de services
+            pour satisfaire tous vos besoins en matière d'assurance auto.
+            <br><br>
+
+            Assistance Si vous avez besoin d'aide, notre équipe d'assistance est à votre disposition à tout moment, 7
+            jours sur 7 et 24 heures sur 24, au besoin.
+        </p>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">240€ d'économiser sur votre assurance.</h2>
+        <p class="text-zinc-600">Direct Assurance Auto vous offre la possibilité de réaliser une économie moyenne de 240€ sur votre assurance auto pour les mêmes prestations.</p>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

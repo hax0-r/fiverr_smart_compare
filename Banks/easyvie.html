@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/easy.png" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">EASY Vie</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Depuis 2018, EasyVie, qui est une filiale de CNP Assurances, offre une
+                    assurance-vie en ligne sans frais de souscription ni frais d'entrée. Cette approche d'épargne et de
+                    protection globale satisfait à vos exigences financières et à vos objectifs à venir. Grâce à
+                    EasyVie, créez un capital souple tout en assurant la protection de vos proches en cas de
+                    difficultés. Prenez pleinement parti de ses différentes possibilités d'investissement et de ses
+                    avantages fiscaux pour préparer tranquillement votre avenir financier.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Besoin de la meilleure assurance du marché ?</h2>
+        <p class="text-zinc-600">Si vous êtes à la recherche de la meilleure assurance-vie disponible sur le marché,
+            EasyVie est la solution parfaite. En combinant les bénéfices d'une assurance-vie souple avec une vaste
+            sélection d'options d'investissement, EasyVie vous propose une occasion exceptionnelle de former un capital
+            tout en préservant votre avenir investissement. Grâce à EasyVie, vous profitez non seulement d'une
+            assurance-vie de haute qualité, mais également d'avantages fiscaux intéressants et de différentes options
+            d'investissement. Faites confiance à EasyVie et laissez-nous vous accompagner dans l'accomplissement de vos
+            objectifs financiers en toute sérénité. </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Pourquoi choisir Easy Vie ?</h2>
+        <p class="text-zinc-600">Voici certains avantages d'EasyVie :
+            <br><br>
+
+
+            EasyVie offre une variété d'options d'investissement souples qui correspondent à vos objectifs financiers et
+            à votre niveau de tolérance au risque.
+            <br><br>
+            Investissez dans EasyVie et bénéficiez d'avantages fiscaux intéressants, ce qui vous permettra de maximiser
+            votre épargne à long terme.
+            <br><br>
+            Protection : EasyVie propose une protection complète pour la vie, garantissant la sécurité financière de vos
+            proches en cas de difficultés financières.
+            <br><br>
+            Avec EasyVie, vous avez la possibilité d'accéder à une variété de fonds d'investissement, ce qui vous permet
+            de varier votre portefeuille et d'optimiser les rendements potentiels.
+            <br><br>
+            Grâce à l'expertise des conseillers d'EasyVie, vous pouvez profiter de conseils sur mesure et d'un
+            accompagnement tout au long de votre parcours financier.
+
+
+
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Pourquoi choisir Easy Vie ?</h2>
+            <p class="text-zinc-100 md:leading-7">Choisissez EasyVie pour bénéficier d'une assurance-vie complète et souple qui répond à vos exigences et à votre mode de vie. Grâce à EasyVie, vous avez accès à une variété d'options d'investissement, ce qui vous permet de créer un capital en fonction de vos objectifs financiers. En outre, EasyVie propose des bénéfices fiscaux intéressants, vous offrant la possibilité d'améliorer votre épargne tout en préservant votre avenir financier et celui de vos proches. En raison de son savoir-faire et de son dévouement envers la satisfaction des clients, EasyVie vous soutient à chaque étape de votre cheminement financier, vous procurant la sérénité que vous méritez. Choisissez EasyVie et permettez-nous de vous accompagner dans la réalisation de vos projets financiers en toute confiance.            </p>
+
+        </div>
+    </div>
+ 
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

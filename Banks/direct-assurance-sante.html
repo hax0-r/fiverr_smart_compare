@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/assurance/direct.webp" class="max-w-[15rem] my-7 w-full mx-auto"
+                    alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Direct Assurance
+                        santé</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Direct Assurance Santé propose une assurance santé complète et souple, qui
+                    répond aux besoins spécifiques de chaque individu. Grâce à une large gamme de garanties, elle offre
+                    une assurance contre les dépenses médicales, l'hospitalisation, les soins dentaires et optiques.
+                    Avec un processus simple et rapide, les assurés ont la possibilité de souscrire en ligne et de gérer
+                    leur contrat de manière aisée. Grâce à Direct Assurance Santé, vous pouvez profiter d'une sérénité
+                    en matière de santé.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Point positif de ce nouveau produit santé ?</h2>
+        <p class="text-zinc-600">Un niveau de personnalisation inégalé. À Direct Assurance, nous sommes convaincus que
+            chaque individu mérite une protection santé qui correspond parfaitement à ses besoins et à son budget.
+            <br><br>
+
+            Ce qui fait la particularité de notre assurance santé :
+            <br><br>
+
+            Tranquillité : Terminez les paiements anticipés grâce à votre carte de tiers payante.
+            <br><br>
+
+            Le remboursement de vos dépenses de santé est effectué en seulement 48 heures.
+            <br><br>
+
+            Autonomie : Vous pouvez télécharger vos factures instantanément depuis votre espace client.
+            <br><br>
+
+            Assistance : Nos spécialistes en santé sont disponibles pour répondre à toutes vos interrogations.
+            <br><br>
+
+            Au lieu d'utiliser une formule magique, préférez une formule sur mesure. En moins de 5 minutes, Direct
+            Assurance vous suggère une formule personnalisée, qui correspond à vos exigences et à votre budget.
+        </p>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Services supplémentaires. </h2>
+        <p class="text-zinc-600">Mais ce n'est pas tout ! Profitez également de nos services supplémentaires :
+
+            <br><br>
+            Consultez un médecin en visio avec notre service de téléconsultation en ligne, disponible 24h/24, 7j/7.
+
+            <br><br>
+            Bénéficiez de tarifs avantageux chez nos partenaires opticiens, dentistes, audioprothésistes, et plus
+            encore.
+
+            <br><br>
+            Accédez à des conseils bien-être via notre application MyEasySanté.
+
+            <br><br>
+            Préparez votre hospitalisation en toute tranquillité grâce à notre guide Hospiway, pour trouver le meilleur
+            établissement.
+        </p>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Pourquoi choisir Direct Assurance Santé?</h2>
+        <p class="text-zinc-600">Choisissez Direct Assurance Santé, c'est choisir une solution d'assurance santé qui accorde une véritable importance au client. Grâce à notre approche axée sur la personnalisation, nous vous permettons de personnaliser votre couverture santé en fonction de vos besoins spécifiques. Nous nous engageons à être transparents et simples, ce qui vous assure une compréhension parfaite des termes de votre contrat, sans surprises ni complications superflues. En outre, grâce à notre large réseau de partenaires et à notre service de téléconsultation en ligne, vous pouvez bénéficier d'un accès pratique et rapide aux soins de santé. Chez Direct Assurance Santé, notre engagement est de vous offrir un service rapide et de haute qualité, vous permettant ainsi de vous reposer et de vous concentrer sur ce qui est réellement important : votre sante</p>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>
