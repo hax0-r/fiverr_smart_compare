@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/finom.jpg" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">FINOM</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Finom opère dans le domaine des fintechs avec une expertise particulière dans
+                    les comptes professionnels en ligne. À l'instar de Qonto, Shine ou encore Anytime avant elle, Finom
+                    propose des solutions de comptes bancaires adaptées aux besoins des travailleurs indépendants et des
+                    entreprises. Dans un marché déjà saturé et hautement compétitif, parvient-elle à se démarquer
+                    efficacement ?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Finom : une offre pro pour les indépendants et sociétés
+        </h2>
+        <p class="text-zinc-600">Finom offre une large sélection d'offres. Certaines sont plus simples, conçues pour
+            répondre aux besoins des travailleurs indépendants, des travailleurs indépendants ou des auto-entrepreneurs,
+            tandis que d'autres sont plus adaptées aux entreprises avec plusieurs associés ou employés.
+            <br><br>
+
+            Les clients de Finom ont accès à une variété de services, tels que la gestion de comptes bancaires, la
+            réalisation de transactions, la possession d'au moins une carte bancaire Business, ainsi que la possibilité
+            d'obtenir des réductions de frais. De plus, la plateforme propose de multiples options pour faciliter la
+            gestion bancaire, comme la création de sous-comptes, l'agrégation des banques et la génération de factures
+            avec rappel de paiement.
+            <br><br>
+
+
+            Toutefois, l'offre de Finom ne propose pas la possibilité d'avoir un chéquier, d'encaisser des chèques ou de
+            déposer des espèces. En outre, il ne comprend pas de découvert autorisé, de possibilités d'épargne ou de
+            crédit.
+            <br><br>
+            Comme de nombreuses autres offres déjà disponibles sur le marché, Finom s'engage à offrir un compte
+            professionnel en ligne à un prix abordable avec des fonctionnalités étendues. Le but principal consiste à
+            offrir une solution pratique et facile, qui vise à faciliter la gestion financière quotidienne des
+            entrepreneurs.
+
+
+
+
+        </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Les offres de Finom</h2>
+        <p class="text-zinc-600">Finom propose une gamme variée d'offres, chacune offrant un niveau de services
+            différent. Plus la formule est coûteuse, plus elle est complète et inclut davantage de services.
+
+            <br><br>
+
+            À l'instar d'Anytime, Finom offre à ses clients la possibilité de choisir entre un paiement annuel ou
+            mensuel. Opter pour un paiement annuel permet de bénéficier d'une réduction. Par exemple, l'offre Start est
+            proposée à 14€ par mois (soit 168€ pour un paiement annuel), tandis qu'elle est à 17€ par mois pour un
+            paiement mensuel.
+
+            <br><br>
+
+
+            Voici un aperçu des différentes offres proposées par Finom
+            <br><br>
+            Parmi les rares banques en ligne professionnelles à proposer un service gratuit, Finom se démarquait.
+            Effectivement, la majorité des concurrents offrent habituellement des tarifs qui commencent autour de 9€,
+            voire moins, en fonction de la banque professionnelle. Malheureusement, les tarifs de Finom ont récemment
+            été modifiés et son offre Solo est maintenant payante : 7€ par mois.
+
+            <br><br>
+
+            Le prix du prochain forfait est immédiatement fixé à 17€ par mois. Toutefois, le client aura accès à deux
+            cartes bancaires, à un plus grand nombre de transferts, à des limites plus élevées et à 5 retraits gratuits
+            chaque mois.
+
+            <br><br>
+
+            Le forfait Corporate, qui est le plus coûteux, est facturé à 149€ par mois. Grâce à ses 20 cartes MasterCard
+            et à ses virements illimités, il est évident que cette offre vise les grandes entreprises qui possèdent un
+            nombre important de clients.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Toutes les fonctionnalités</h2>
+            <p class="text-zinc-100 md:leading-7">Les plateformes bancaires en ligne professionnelles comme Finom ne
+                cherchent pas à proposer une gamme complète de services (tels que le crédit ou l'épargne). Ils ne visent
+                pas encore à rivaliser avec une banque traditionnelle, mais plutôt à faciliter la gestion financière des
+                professionnels en offrant des outils que les banques traditionnelles ne offrent pas.
+
+                <br><br>
+
+                De cette manière, Finom propose un tableau de bord pratique qui facilite la visualisation et la
+                classification de toutes les dépenses et transactions.
+
+                <br><br>
+
+                Toutefois, les caractéristiques offertes diffèrent selon l'offre bancaire sélectionnée :
+                <br><br>
+                L'accès comptable offre à son comptable la possibilité d'accéder à son compte, ce qui simplifie les
+                bilans.
+
+                <br><br>
+
+                Ensuite, l'agrégation bancaire est un système qui permet de relier ses autres comptes, y compris
+                personnels, pour regrouper toutes ses transactions en un seul endroit.
+
+                <br><br>
+
+                La banque pour les auto-entrepreneurs offre également la possibilité d'ouvrir des sous-comptes, appelés
+                « portefeuilles ». Chaque compte est lié à un relevé d'identité bancaire distinct de celui du compte
+                principal. Le client a donc la possibilité de consacrer chaque sous-compte à un usage spécifique.
+                <br><br>
+                Finom offre un outil de facturation crucial qui facilite la liaison directe entre les factures et les
+                opérations. En outre, l'utilisation d'un rappel de paiement automatique simplifie les procédures de
+                paiement.Le compte en ligne propose également un système de remboursement. Chaque fois que le client
+                effectue un paiement avec la carte Finom, une partie de la dépense est remboursée. La somme maximale de
+
+                <br><br>
+
+                Le montant du cashback obtenu chaque mois diffère en fonction du type d'offre :​
+                <br>
+                Solo : 20€ par mois.
+
+                <br>
+                Début : 20€/mois.
+                <br>
+
+                Premium : 30€ par mois.
+                <br>
+
+                Business : 129€/mois
+
+            </p>
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Comment souscrire chez Finom ?</h2>
+            <p class="text-zinc-100 md:leading-7">
+                Chez Finom, les auto-entrepreneurs, les travailleurs indépendants, les sociétés peuvent ouvrir un
+                compte. En outre, les nouvelles entreprises sont maintenant acceptées. De cette manière, il est
+                envisageable de sélectionner Finom afin de déposer son capital social en seulement 48 heures.
+
+                <br><br>
+
+                L'établissement d'un compte est plutôt facile. Il vous suffit d'accéder au site du compte professionnel
+                et de suivre les instructions.
+
+                <br><br>
+
+                Le client devra fournir ses renseignements personnels ainsi que ceux de son entreprise. Il faudra
+                présenter un document d'identité (carte d'identité, passeport, titre de séjour) ainsi qu'un justificatif
+                de résidence. Finom exige également une évaluation de la situation.
+
+
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/blank.jpg" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Blank</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Actuellement, il est difficile pour les banques traditionnelles de proposer un
+                    service bancaire à la fois facile et abordable pour les entreprises et les travailleurs
+                    indépendants. Néanmoins, les institutions bancaires en ligne ont récemment pris le relais et offrent
+                    de nouvelles options bancaires spécialement adaptées aux experts.
+                    <br><br>
+                    La nouvelle formule Blank, proposée par le Crédit Agricole, semble proposer une combinaison très
+                    attrayante entre un compte bancaire professionnel et un service d'assistance administrative.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">💰 Les tarifs Blank</h2>
+        <p class="text-zinc-600">Blank propose trois options bancaires destinées aux travailleurs indépendants. </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Blank fonctionnalités</h2>
+        <p class="text-zinc-600">Les caractéristiques incluses dans Blank incluent :
+
+            <br><br>
+            Un RIB, des virements et des prélèvements sur un compte bancaire.
+
+            <br><br>
+            Une carte de crédit bancaire Visa d'entrée
+
+            <br><br>
+            Des garanties (seulement disponible dans la version supérieure)
+
+            <br><br>
+            L'acceptation de chèques (avec des restrictions)
+
+            <br><br>
+            Un soutien par téléphone
+            <br><br>
+
+            Un espace de gestion visant à apporter une assistance en matière de comptabilité et de démarches
+            administratives (comme la catégorisation des dépenses, l'exportation des documents comptables, la création
+            de devis, etc., avec l'ajout prévu de nouveaux services).
+            <br><br>
+            Un ensemble de dépôts de capital pour lancer l'entreprise.
+            <br><br>
+            Toutefois, les clients de Blank ne seront pas autorisés à recevoir de chéquier ni à utiliser un découvert
+            autorisé. Il y a aussi des limites pour certains services : l'entreprise peut effectuer jusqu'à 100
+            virements et/ou prélèvements par mois, au-delà de quoi chaque transaction coûtera 1€.
+            <br><br>
+            Blank s'inspire donc en grande partie du modèle des néobanques pour entreprises déjà présentes sur le marché
+            (N26 Business, Qonto, Bourso Pro, Shine...) : une offre comprenant les services indispensables, sans
+            découvert ni chéquier, avec parfois des restrictions sur les transactions, le tout à un prix abordable et
+            avec des fonctionnalités pratiques.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Comment ouvrir un compte Qonto ?</h2>
+            <p class="text-zinc-100 md:leading-7">Le mois initial est gratuit. Il est également gratuit d'ouvrir et de
+                clôturer le compte, et les offres ne nécessitent aucun engagement.
+                <br><br>
+                👉 Pour seulement 6€ par mois, la formule Simple offre la possibilité d'avoir un compte avec une carte
+                Visa et de réaliser quelques virements et prélèvements. Son utilisation est idéale pour les travailleurs
+                indépendants qui commencent à exercer leur activité ou qui désirent simplement profiter des services
+                bancaires de base.
+                <br><br>
+                👉 La formule Confort, qui coûte 17€ par mois, propose également la possibilité d'acheter quelques
+                chèques, de faire un plus grand nombre de virements et de prélèvements, et surtout, elle inclut une
+                gamme complète d'assurances :
+                <br><br>
+                La carte noire est vide.
+                <br><br>
+
+                Les services d'assurance et d'assistance pour les déplacements incluent des retards de transport, la
+                perte de bagages et l'assistance juridique.
+                <br><br>
+
+                Protection en cas de maladie, d'accident ou de décès à l'étranger (hospitalisation, rapatriement,
+                remplacement du chauffeur, retour anticipé)
+                <br><br>
+
+                Contre l'utilisation frauduleuse de la carte de crédit
+                <br><br>
+
+
+
+                Ces assurances sont principalement destinées à protéger le titulaire pendant ses déplacements, et seront
+                moins adaptées à une personne qui se déplace moins souvent.
+                <br><br>
+
+
+                👉 Enfin, la formule complète offre les mêmes services avec des limites plus élevées et des assurances
+                supplémentaires. Elles sont également applicables en France cette fois-ci et offrent une meilleure
+                protection en cas de problème, en particulier en matière de santé :
+                <br><br>
+
+
+                Assistance juridique, comptable et fiscale par téléphone.
+
+            </p>
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Les fonctionnalités supplémentaires</h2>
+            <p class="text-zinc-100 md:leading-7">Depuis sa création, Blank a peu à peu ajouté de nouvelles
+                fonctionnalités afin d'améliorer ses offres. Il y a donc à la fois des services compris et des services
+                facultatifs :
+
+                <br> <br>
+                Services inclus :
+                <br> <br>
+
+                Agrégation bancaire, qui facilite la connexion d'autres comptes bancaires et la visualisation de ces
+                derniers depuis une seule plateforme.
+                <br> <br>
+
+                Mise en place des déclarations URSSAF pour les entrepreneurs indépendants.
+                <br> <br>
+
+                Appui pour modifier les devis et les factures.
+                <br> <br>
+                Services supplémentaires :
+                <br> <br>
+
+                En collaboration avec Mansa, un financement allant jusqu'à 10 000 € est offert aux travailleurs
+                indépendants.
+                <br> <br>
+
+                Assisté par un expert comptable.
+                <br> <br>
+
+                Zettle, un terminal de paiement.
+                <br> <br>
+
+                La collaboration avec Cash in Time offre un service d'affacturage qui permet de recevoir des paiements
+                anticipés afin d'éviter les impayés et les retards de paiement.
+                <br> <br>
+
+                Service de mise en place de micro-entreprise : 59€ hors taxes.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10  text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Comment ouvrir un compte Blank ?</h2>
+            <p class="text-zinc-100 md:leading-7">Blank propose une ouverture rapide d'un compte sans engagement et la
+                possibilité de profiter des trois premiers mois gratuitement.
+
+                <br><br>
+                Sous certaines conditions, Blank accepte les entreprises individuelles (EI), les entreprises
+                individuelles à responsabilité limitée (EIRL), les auto-entrepreneurs, les entreprises unipersonnelles à
+                responsabilité limitée (EURL), les sociétés à responsabilité limitée (SARL), les sociétés par actions
+                simplifiées unipersonnelles (SASU), les sociétés par actions simplifiées (SAS) et les sociétés civiles
+                immobilières (SCI). D'autre part, Blank ne convient pas aux associations.
+                <br><br>
+                Il est indispensable d'avoir un numéro SIRET, un numéro de téléphone français et une pièce d'identité pour ouvrir un compte chez Blank. Il est interdit de pratiquer certaines activités, comme les organisations religieuses, les casinos, les jeux de hasard ou la vente de tabac.
+            </p>
+
+        </div>
+    </div>
+
+   
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

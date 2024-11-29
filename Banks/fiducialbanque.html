@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/fiducial.jpg" class="max-w-[15rem] my-7 w-full mx-auto"
+                    alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Banque Fiducial</span>
+                    en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Fiducial offre une variété de services aux professionnels tels que des comptes
+                    bancaires, des prêts, des épargnes, ainsi que des services d'expertise comptable, d'audit et de
+                    logiciels de gestion. Elle vise avant tout à soutenir les entrepreneurs, les petites et moyennes
+                    entreprises (TPE et PME) dans leur évolution.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Fiducial : un diversité de services à couper le soufle
+        </h2>
+        <p class="text-zinc-600">Créée en 1880, Fiducial dépasse largement le cadre d'une simple banque. Cette
+            entreprise regroupe diverses entreprises spécialisées dans divers secteurs, proposant ainsi aux experts une
+            variété de services. La société Fiducial peut s'occuper de différents domaines, tels que la gestion du
+            compte bancaire professionnel et du patrimoine financier, l'expertise comptable, le développement de
+            logiciels de gestion et la fourniture de matériel commercial. Donc, l'entreprise peut se transformer en
+            l'unique interlocutrice de ses clients.
+
+
+            <br><br>
+            Le groupe Fiducial offre de nombreux services, tels que :
+            <br><br>
+            Compte bancaire
+            <br>
+            Solutions de crédit
+            <br>
+
+            Gestion de patrimoine
+            <br>
+
+            Comptabilité
+            <br>
+
+            Solutions informatiques (logiciels, matériel, cloud, création de sites web, solutions d'encaissement...)
+            <br>
+
+            Conseils juridiques
+
+            <br>
+            Aide à la création d'entreprise
+            <br>
+
+            Audits
+            <br>
+
+            Équipement de bureau
+            <br>
+
+            Cession et transmission d'entreprise et bien d'autres encore...
+            <br>
+            <br>
+
+            Fiducial s'adresse à une large clientèle composée d'auto-entrepreneurs, d'artisans, d'indépendants, de
+            professions libérales, de TPE et de PME. Il n'est bien entendu pas nécessaire de souscrire à l'ensemble des
+            produits du groupe ; chaque professionnel peut choisir les services qui répondent à ses besoins spécifiques.
+
+
+        </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">L’offre bancaire proposée par Fiducial Banque</h2>
+        <p class="text-zinc-600">Fiducial entre dans le domaine bancaire en 2014 avec une offre bancaire spécialement
+            adaptée aux professionnels. Cette proposition est spécialement conçue pour les entreprises dont le chiffre
+            d'affaires annuel est inférieur à 2 millions d'euros. Les travailleurs indépendants, les artisans, les
+            petites et moyennes entreprises sont les bienvenus.
+
+            <br><br>
+
+            Fin 2020, l'offre bancaire est modifiée afin de proposer trois formules différentes. Voici les
+            caractéristiques essentielles de la banque pour les petites et moyennes entreprises :
+
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <p class="text-zinc-100 md:leading-7">Un compte FIDUCIAL Banque se trouve à la limite entre une banque
+                traditionnelle et une banque en ligne.
+
+                <br><br>
+
+                Les tarifs sont en effet accessibles, tout comme ceux d'une banque en ligne, mais la banque propose
+                également certains services caractéristiques d'une banque traditionnelle. Prenons l'exemple des produits
+                bancaires tels que le chéquier et le dépôt d'espèces. Si besoin, il y a des chargés d'affaires
+                spécialisés qui peuvent se déplacer et rencontrer directement leurs clients. Il est également
+                envisageable d'encaisser des chèques. En outre, Fiducial offre la possibilité de contracter un prêt ou
+                d'ouvrir un compte sur livret afin de placer de l'argent en épargne.
+                <br><br>
+                Toutefois, il est possible que ces services soient légèrement restreints pour les grandes entreprises.
+                Pour ouvrir un compte bancaire professionnel, il peut être judicieux de s'adresser à une banque en ligne
+                spécialisée ou à une banque traditionnelle.
+                <br><br>
+                Le compte bancaire pour professionnels offert par Fiducial est donc extrêmement exhaustif. L'accès à une
+                multitude de services supplémentaires, comme l'expertise comptable, constitue également un avantage
+                important. Cela facilite la centralisation de tous les services de la société ou de l'entrepreneur
+                auprès d'un seul interlocuteur.
+
+
+
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

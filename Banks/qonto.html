@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/qonto.jpg" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Qonto</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Il est souvent difficile pour les micro-entrepreneurs, les entrepreneurs
+                    individuels à responsabilité limitée (EIRL), les travailleurs indépendants et les professions
+                    libérales de trouver un compte bancaire qui répond à leurs besoins particuliers. En général, les
+                    banques classiques offrent des comptes à des tarifs élevés, élaborés de la même façon que ceux
+                    destinés aux grandes entreprises. Par conséquent, les travailleurs autonomes sont confrontés à des
+                    frais bancaires importants, qui sont démesurés par rapport à l'utilisation réelle de leur compte.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Ci-dessous, vous trouverez les offres Solo.</h2>
+        <p class="text-zinc-600">À la différence des autres banques en ligne, Monabanq n'propose pas de programmes sans
+            frais. Au lieu de cela, Monabanq offre cinq offres très concurrentielles : Pratiq à 2 €, Pratiq+ à 3 €,
+            PatriqPro à partir de 9 €, Uniq à 6 € et Uniq+ à 9 €. Avec ce tarif abordable, vous pouvez bénéficier d'un
+            compte bancaire complet, vous évitant ainsi toute surprise désagréable de frais supplémentaires pour la fin
+            du mois. </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Pour les sociétés – Les offres Equipe</h2>
+        <p class="text-zinc-600">Les offres "Équipe" ci-dessous sont spécialement conçues pour les situations où il y a
+            plusieurs associés ou lorsqu'il s'agit d'une TPE ou d'une PME.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Comment ouvrir un compte Qonto ?</h2>
+            <p class="text-zinc-100 md:leading-7">L'établissement d'un compte Qonto est facile et rapide. La procédure
+                se déroule directement sur le site web de Qonto, où l'entreprise peut compléter un formulaire de
+                souscription. Qonto accueille les travailleurs indépendants, les individus, les entreprises, les
+                sociétés et les associations. Les démarches sont confiées au représentant légal de l'entreprise, ou à un
+                autre membre qui a une procuration.
+                <br><br>
+                On accepte les entreprises enregistrées en France et dans les DOM TOM. Toutefois, certaines activités ne
+                sont pas autorisées, comme la vente de tabac, les activités militaires, les jeux d'argent, etc. On peut
+                consulter ici la liste complète des activités exclues.
+                <br><br>
+                Les documents nécessaires incluent :
+                <br><br>
+
+                La preuve d'identité et de résidence du mandataire
+                <br><br>
+
+                Certificat d'identification et de résidence des bénéficiaires réels
+                <br><br>
+
+                Élément justifiant le siège social
+                <br><br>
+
+                Le document prouvant l'existence de l'entreprise (kbis, statuts, preuve d'immatriculation, etc.)
+                <br><br>
+                Qonto offre aussi un service de mobilité bancaire qui facilite le transfert automatique des virements et
+                prélèvements depuis le compte précédent vers le compte nouveau.
+            </p>
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Le pack pour les créateurs d’entreprise</h2>
+            <p class="text-zinc-100 md:leading-7">Afin de rendre la vie des entrepreneurs plus facile, Qonto a mis en
+                place un pack spécialement élaboré pour les entrepreneurs. Cette offre est disponible pour les SAS/SASU,
+                SARL ou EURL/EIRL et permet de déposer le capital social de l'société. On obtient l'attestation de fonds
+                de dépôt en 72 heures.​
+                <br><br>
+
+                Pack Basic : 169€ (capital + 12 mois de l'offre Basic) ou 69€ (capital) + 11€/mois (offre Basic).
+                <br>
+
+                Pack Smart : 289€ (capital + 12 mois de l'offre Smart) ou 69€ (capital) + 23€/mois (offre Smart).
+                <br>
+
+                Pack essentiel : 399€ (pour un dépôt de capital + 12 mois de l'offre Standard) ou 69€ (pour un dépôt de
+                capital) + 34€/mois (offre Essential).
+                <br><br>
+                Après avoir effectué le dépôt de capital social par virement simple, les fonds sont transférés.
+                <br><br>
+                Une preuve de lieu de résidence du siège social
+                <br><br>
+
+                - Les règles de la société
+
+                <br><br>
+                - La liste des signataires, incluant pour chaque individu : Une preuve de résidence de moins de trois
+                mois et une pièce d'identité valide.
+                <br><br>
+
+                Ensuite, le RIB de leur compte Qonto sera envoyé aux clients, ce qui permettra à chaque associé de
+                procéder au virement de son apport.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10  text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Des fonctionnalités pour faciliter la gestion</h2>
+            <p class="text-zinc-100 md:leading-7">L'application Qonto et son compte proposent une variété de
+                fonctionnalités qui permettent de faciliter la gestion financière.
+
+                <br><br>
+
+                Les utilisateurs ont la possibilité de scanner rapidement les justificatifs de dépenses et de les
+                associer directement à celles-ci, par exemple. En outre, il est envisageable de classer les dépenses
+                automatiquement, en détectant automatiquement la TVA. Enfin, il est également envisageable d'intégrer
+                les transactions financières dans un logiciel de comptabilité afin d'assurer une gestion plus fluide et
+                performante.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Comment choisir son offre ?</h2>
+        <p class="text-zinc-600">La sélection de l'offre est essentiellement influencée par la taille de l'entreprise,
+            le nombre d'employés et ses exigences en matière de cartes bancaires.En règle générale, les
+            auto-entrepreneurs, les travailleurs indépendants et les travailleurs indépendants peuvent choisir les
+            offres Solo, car ils n'ont pas à payer des salaires à des employés, par exemple.
+
+            <br><br>
+            Toutefois, la limite mensuelle de 20 virements peut parfois être restrictive, car un micro-entrepreneur peut
+            nécessiter des transactions avec ses clients.Le prix de l'offre Basic de 11 € par mois semble
+            raisonnablement accessible.
+            <br><br>
+            Toutefois, les autres options peuvent rapidement devenir plus coûteuses, ce qui les rend plus adaptées aux
+            entreprises de plus grande taille.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Les cartes bancaires Qonto</h2>
+            <p class="text-zinc-100 md:leading-7">À l'origine, chaque proposition comprend la carte MasterCard One.
+                Toutefois, les clients peuvent choisir entre une carte Plus ou X.
+
+                <br><br>
+                Il est envisageable de commander une carte supplémentaire pour 5€ par mois pour ceux qui ne disposent
+                que de la carte One incluse dans leur offre. Par contre, en cas de remplacement de la carte One par une
+                carte Plus ou X, le client devra payer des frais supplémentaires de 6€ ou 20€ par mois par carte.
+                <br><br>
+                Il est aussi possible d'avoir une ou plusieurs cartes One tout en ayant une carte Plus ou X, en fonction
+                des besoins particuliers du client.
+            </p>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

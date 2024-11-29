@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="../Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="../index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="../Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="../index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="../index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="../Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="../index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="../Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="../Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="../Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="../Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="../Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 ">
+
+        <div
+            class="max-w-5xl border-[#12354b] overflow-hidden items-center gap-4 border-2 rounded-xl  grid md:grid-cols-2 w-full mx-auto">
+            <div class="bg-[#12354b] p-5 md:rounded-r-xl h-full flex flex-col items-center justify-center">
+                <h2 class="text-white text-center font-semibold md:text-3xl text-2xl">Avis Smart Compare sur</h2>
+                <img src="../Docs/Assets/images/Home/Banks/memo.jpg" class="max-w-[15rem] my-7 w-full mx-auto" alt="">
+                <div class="flex items-center  justify-center w-full">
+                    <a href="" class="w-full md:max-w-[80%]">
+                        <button
+                            class="bg-transparent border-2 w-full text-center border-[#fff] transition-all duration-500 hover:opacity-70  py-3 rounded-lg text-white font-medium">Découvrir</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-5">
+                <h2 class="text-[#12354bda] font-semibold text-2xl"><span class="text-[#12354b]">Memo Bank</span> en
+                    résumé</h2>
+                <br>
+                <p class="text-zinc-600">Memo Bank, créée en septembre 2020, se présente comme la nouvelle banque
+                    destinée aux professionnels et aux petites et moyennes entreprises, proposant à la fois des comptes
+                    bancaires et des crédits. Elle est l'une des rares offres nouvelles pour les professionnels ayant
+                    obtenu une licence bancaire, lui permettant ainsi de proposer une large gamme de services.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Memo Bank : une banque pour les PME</h2>
+        <p class="text-zinc-600">De nos jours, la majorité des banques en ligne et des néobanques qui se concentrent sur
+            le marché des comptes professionnels sont principalement destinées aux auto-entrepreneurs, aux travailleurs
+            indépendants et aux petites entreprises. Toutefois, les grandes entreprises peuvent ne pas trouver leur
+            place là-bas.
+            <br><br>
+
+            L'approche de Memo Bank est tout autre : elle se concentre sur les petites et moyennes entreprises avec un
+            chiffre d'affaires annuel d'au moins 2 millions d'euros. Elle ne s'oppose donc pas directement aux autres
+            offres de comptes professionnels en ligne déjà existantes, mais plutôt aux banques traditionnelles, qui sont
+            les seules à pouvoir jusqu'à présent proposer des comptes aux grandes PME.
+            <br><br>
+            Toutefois, les petites et moyennes entreprises ont des besoins essentiels en termes de services bancaires.
+            Outre l'utilisation d'un compte et d'une carte bancaire, elles nécessitent également un découvert, un accès
+            au crédit, un conseiller spécialisé et de nombreuses fonctionnalités pour simplifier leur gestion. Toutes
+            les néobanques ne offrent pas toujours ces services. Cependant, Memo Bank semble actuellement satisfaire ces
+            exigences. Elle possède la particularité d'être agréée comme établissement de crédit, ce qui en fait une
+            véritable banque.
+
+
+        </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Les trois offres de Memo Bank</h2>
+        <p class="text-zinc-600">À l'heure actuelle, Memo Bank offre trois options avec des prix allant de 49€ à 399€
+            mensuels. L'offre Basique, la première, est spécialement conçue pour les petites et moyennes entreprises,
+            même si Memo Bank ne précise pas clairement ce qu'elle entend par "petite". Il peut s'agir du chiffre
+            d'affaires, mais cette information n'est pas précisée.
+            <br><br>
+            L'offre Plus, qui est la formule milieu de gamme, est principalement recommandée par Memo Bank, tandis que
+            l'offre Illimité est spécialement conçue pour les plus grandes PME.
+
+
+
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Pour les sociétés – Les offres Equipe</h2>
+            <p class="text-zinc-100 md:leading-7">Il est important de noter que les 30 premiers jours sont inclus dans
+                toutes les offres de Memo Bank. Puisque toutes sont sans engagement, les clients ont la possibilité de
+                tester gratuitement la banque pour PME avant de prendre une décision concernant le transfert de leurs
+                fonds et transactions vers cette institution financière.
+                <br><br>
+                À l'origine non accessibles, les cartes bancaires sont maintenant disponibles chez Memo Bank. L'offre de
+                base comprend une seule carte physique, mais elles sont illimitées dans l'offre la plus chère. En outre,
+                il existe également des cartes virtuelles spécialement conçues pour les paiements en ligne.
+                <br><br>
+                Par la suite, le fonctionnement est assez proche de celui des néobanques : un nombre minimum
+                d'utilisateurs, des virements mensuels limités (à l'exception de l'offre Illimité) et un RIB français.
+                D'autre part, il n'y a pas de commission de mouvements, à la différence des frais élevés que les banques
+                traditionnelles facturent systématiquement.
+                <br><br>
+                Chez Memo Bank, il n'est pas possible d'accepter tous les statuts juridiques.
+            </p>
+
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(rgba(0, 0, 0, 0.811),rgba(0, 0, 0, 0.532)),url(../Docs/Assets/card.jpg) center/cover no-repeat;"
+        class="p-5 py-10 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Les fonctionnalités du compte bancaire</h2>
+            <p class="text-zinc-100 md:leading-7">
+                Chez Memo Bank, chaque compte bancaire est accompagné d'un ensemble de caractéristiques :
+
+                <br><br>
+
+                Transferts simples et répartis
+                <br><br>
+
+                Prélèvements SEPA entre sociétés
+                <br><br>
+
+                Classification des opérations
+                <br><br>
+
+                Nombre illimité de transactions historiques
+                <br><br>
+
+                Les autorisations varient selon l'utilisateur (à l'exception de l'offre Basique).
+                <br><br>
+
+                Les virements sont validés par un administrateur (à l'exception de l'offre Basique).
+
+
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10  text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Les avantages : crédit, découvert autorisé,
+                conseiller bancaire</h2>
+            <p class="text-zinc-100 md:leading-7">À l'origine, chaque proposition comprend la carte MasterCard One.
+                Toutefois, les clients peuvent choisir entre une carte Plus ou X.
+
+                <br><br>
+                Il est envisageable de commander une carte supplémentaire pour 5€ par mois pour ceux qui ne disposent
+                que de la carte One incluse dans leur offre. Par contre, en cas de remplacement de la carte One par une
+                carte Plus ou X, le client devra payer des frais supplémentaires de 6€ ou 20€ par mois par carte.
+
+                <br><br>
+                Il est aussi possible d'avoir une ou plusieurs cartes One tout en ayant une carte Plus ou X, en fonction
+                des besoins particuliers du client.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="max-w-7xl w-full mx-auto p-5 md:mt-10 mt-5">
+        <h2 class="font-semibold text-2xl mb-3 text-[#0d2939]">Agrément d’établissement de crédit</h2>
+        <p class="text-zinc-600">En plus de son positionnement, Memo Bank se démarque des autres offres en raison de son
+            agrément en tant qu'établissement de crédit. Ce statut est délivré par l'ACPR, l'autorité de régulation
+            bancaire, après un processus de développement rigoureux et est le plus difficile à obtenir. Toutes les
+            grandes banques traditionnelles possèdent cet agrément. De manière similaire, les néobanques comme Qonto ou
+            Shine sont habituellement des établissements de paiement, ce qui leur interdit de proposer des services de
+            crédit, des facilités de découvert autorisé ou des chéquiers aux clients.
+            <br><br>
+            Selon une vérification effectuée sur le site Regafi, Memo Bank est correctement classée en tant
+            qu'établissement de crédit.
+            <br><br>
+            Memo Bank a la possibilité de développer des services tels que le crédit grâce à son statut d'établissement
+            de crédit, tout en assurant une sécurité accrue pour ses clients. La garantie de leurs dépôts jusqu'à 100
+            000€ par compte est bénéficiée par ces derniers, assurée par le FGDR (Fonds de Garantie des Dépôts et de
+            Résolution).
+
+
+
+
+
+        </p>
+        <br>
+        <h2 class="font-semibold text-2xl my-3 text-[#0d2939]">Crédit et découvert autorisé</h2>
+        <p class="text-zinc-600">Comme nous l'avons vu, Memo Bank offre à ses clients des services de crédit et un
+            découvert autorisé, ce qui la différencie des autres néobanques pour le moment (même si l'évolution des
+            offres Prismea et Blank, bientôt lancées par le Crédit du Nord et le Crédit Agricole, reste à surveiller).
+
+            <br><br>
+
+            Toutefois, les informations sur le montant du découvert autorisé et son taux d'intérêt ne sont pas
+            précisées. Cette fonctionnalité est réservée aux offres Plus et Illimité.
+
+            <br><br>
+
+            Sur le plan financier, Memo Bank offre des prêts à la consommation qui présentent les caractéristiques
+            suivantes :
+            <br><br>
+            Entre 20 000 et 200 000 euros (il est possible de demander jusqu'à 1 million d'euros)
+            <br><br>
+
+            Remboursement d'une durée de 1 à 7 ans.
+
+            <br><br>
+            Financier des projets matériels ou immatériels (tels que l'acquisition d'un camion, la soumission d'un
+            brevet, l'acquisition d'un concurrent, etc.)
+
+            <br><br>
+
+            Il n'est pas donné d'exemple de taux d'intérêt. Toutefois, il convient de souligner que les périodes de
+            remboursement sont plutôt courtes, ce qui laisse entendre que l'entreprise doit posséder une capacité de
+            remboursement solide et être capable de supporter des mensualités élevées. La pérennité de ces prêts sera
+            conditionnée par la situation financière de l'entreprise et son revenu. Pour obtenir des renseignements plus
+            précis, il est recommandé de prendre contact directement avec la banque en fixant un rendez-vous sur son
+            site internet.
+            <br><br>
+            L'avantage majeur de Memo Bank réside dans sa capacité à fournir un financement, bien qu'il soit encore trop
+            tôt pour évaluer si ces crédits sont compétitifs par rapport à ceux offerts par les banques traditionnelles.
+        </p>
+    </div>
+
+    <div class="bg-[#12354b99] p-5 py-10 md:mt-10 mt-5 text-white">
+        <div class="max-w-7xl w-full mx-auto">
+
+            <h2 class="font-semibold text-2xl my-3 text-[#ffffff]">Encaissement par prélèvements</h2>
+            <p class="text-zinc-100 md:leading-7">En plus des paiements par carte bancaire, Memo Bank permet aux
+                entreprises d'encaisser les paiements de leurs clients par prélèvement direct. Le but est de rendre le
+                processus de paiement plus facile pour le client.
+
+                <br><br>
+
+                Néanmoins, ce service est offert à la charge de frais supplémentaires :
+                <br><br>
+
+                Prix de base : 50€ par mois.
+                <br><br>
+
+                Prix Plus : 75€ par mois.
+                <br><br>
+
+                Limitée : 100€ par mois.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../Docs/Javascripts/global.js"></script>
+    <script src="../Docs/Javascripts/navbar.js"></script>
+    <script src="../Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>
