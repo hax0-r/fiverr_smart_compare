@@ -25,7 +25,7 @@ footer.innerHTML = `
                 <ul class="space-y-3">
                     <li><a href="mailto:contact@financefinder.fr"
                             class="text-blue-400 hover:underline">contact@financefinder.fr</a></li>
-                    <li><a class="text-blue-500">© 2024 par FinanceFinder</a></li>
+                    <li><a class="text-blue-500">© 2024 par Smart Compare</a></li>
                 </ul>
             </div>
         </div>
