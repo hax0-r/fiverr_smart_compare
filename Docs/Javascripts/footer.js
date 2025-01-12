@@ -14,9 +14,9 @@ footer.innerHTML = `
         <div class="grid md:grid-cols-3 w-full mx-auto gap-3 max-w-6xl md:mt-4 mt-6">
             <div class="text-center md:text-start">
                 <ul class="space-y-3">
-                    <li><a href="/Mentions-Légales.html" class="text-blue-500 hover:underline"> Mentions Légales</a>
+                    <li><a href="/Mentions-Legales.html" class="text-blue-500 hover:underline"> Mentions Légales</a>
                     </li>
-                    <li><a href="/Mentions-Légales.html" class="text-blue-500 hover:underline"> Conditions
+                    <li><a href="/Conditions-Générales.html" class="text-blue-500 hover:underline"> Conditions
                             Générales</a></li>
                     <li><a href="/Contact.html" class="text-blue-500 hover:underline"> Contact</a></li>
                 </ul>

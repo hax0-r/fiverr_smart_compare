@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="./index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="./index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 py-12">
+
+        <div class="max-w-6xl mx-auto w-full">
+
+            <h2 class="text-[#19384cdc] font-bold md:text-4xl text-3xl text-center">Mentions Légales
+            </h2>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Éditeur du site</h2>
+            <p class="text-zinc-700 md:leading-8">
+                Le site <b>Smart-Compare</b> (ci-après "le Site") est édité par :
+                <br> <b>Nom de l'entreprise</b>: SMART COMPARE
+                <br> <b>Siège social </b>: 62 Avenue Berthelot, 13006, Marseille
+                <br> <b>Contact </b>:
+                <br> Email : <a href="mailto:mickael.libanov@smart-compare.fr"
+                    class="text-blue-500 hover:underline">mickael.libanov@smart-compare.fr</a>
+                <br> Formulaire de contact : <a href="http://www.smart-compare.fr/contact"
+                    class="text-blue-500 hover:underline">smart-compare.fr</a>
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Hébergeur du site</h2>
+            <p class="text-zinc-700 md:leading-8">
+                <b>Le Site est hébergé par</b> :
+                <br> <b>Nom de l’hébergeur</b> : OVH
+                <br> <b>Adresse</b> : 2 rue Kellermann – 59100 ROUBAIX
+                <br> <b>Site web</b> : <a class="text-blue-500 hover:underline"
+                    href="http://www.ovh.com/fr">ovh.com/fr</a>
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Responsable de la publication</h2>
+            <p class="text-zinc-700 md:leading-8">
+                <b>Le responsable de la publication est</b> :
+                <br> <b>Nom et prénom</b> : Mickael LIBANOV
+                <br> <b>Email</b> : <a class="text-blue-500 hover:underline"
+                    href="mailto:mickael.libanov@smart-compare.fr">mickael.libanov@smart-compare.fr ou
+                    mickael.libanov@gmail.com</a>
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Propriété intellectuelle</h2>
+            <p class="text-zinc-700 md:leading-8">
+                Tous les contenus présents sur le <a href="http://www.smart-compare.fr/"
+                    class="text-blue-500 hover:underline">smart-compare.fr</a> (textes, images, vidéos, logos, icônes,
+                graphismes, etc.) sont protégés par les lois françaises et internationales relatives à la propriété
+                intellectuelle. <br><br>
+                Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments
+                de <a href="http://www.smart-compare.fr/" class="text-blue-500 hover:underline">smart-compare.fr</a>,
+                quel que soit le moyen ou le procédé utilisé, est interdite, sauf
+                autorisation écrite préalable de Smart Compare.
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Limitation de responsabilité</h2>
+            <ul class="text-zinc-700 list-disc space-y-2 pl-5">
+                <li> <b>Contenu du Site</b> : Smart-Compare s'efforce de fournir des informations aussi précises que
+                    possible,
+                    mais
+                    ne garantit pas l'exactitude, la complétude ou l'actualité des informations présentes sur le Site.
+                </li>
+                <li> <b>Utilisation du Site</b> : L'utilisateur utilise le site à ses propres risques. Smart-Compare ne
+                    pourra
+                    être
+                    tenu responsable des dommages directs ou indirects résultant de l'utilisation de
+                    <a href="http://www.smart-compare.fr/" class="text-blue-500 hover:underline">smart-compare.fr</a> .
+                </li>
+                <li> <b>Liens externes</b> : Le site peut contenir des liens vers d'autres sites. Smart-Compare garantie
+                    l’intégralités des liens postés sur ses articles en actant la conformité et la sureté de ceux-ci.
+                </li>
+            </ul>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Protection des données personnelles</h2>
+            <p class="text-zinc-700 md:leading-8">
+                Smart-Compare traite les données personnelles conformément à la réglementation en vigueur, notamment le
+                Règlement Général sur la Protection des Données (RGPD). <br><br>
+                Pour plus d’informations, veuillez consulter le site lié à la réglementation général de la protéction
+                des donées :
+                <a href="https://www.economie.gouv.fr/entreprises/reglement-general-protection-donnees-rgpd"
+                    class="text-blue-500 hover:underline">economie.gouv.fr</a>
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Cookies</h2>
+            <p class="text-zinc-700 md:leading-8">
+                Le Site utilise des cookies pour améliorer l'expérience utilisateur. Vous pouvez configurer vos
+                préférences en matière de cookies à tout moment via notre gestionnaire de cookies qui apparait en pop-up
+                lors de votre venu sur le site internet.
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Droit applicable et juridiction compétente</h2>
+            <p class="text-zinc-700 md:leading-8">
+                Les présentes mentions légales sont régies par le droit français. <br><br>
+                En cas de litige, les tribunaux compétents seront ceux du ressort du siège social de Smart-Compare, sauf
+                disposition légale contraire.
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Contact</h2>
+            <p class="text-zinc-700 md:leading-8">
+                Pour toute question ou demande d’information concernant   <a href="http://www.smart-compare.fr/"
+                class="text-blue-500 hover:underline">smart-compare.fr</a>  ou ces mentions
+                légales, vous pouvez nous contacter à l’adresse suivante :
+                <br> <b>Email</b> :  <a class="text-blue-500 hover:underline"
+                href="mailto:mickael.libanov@smart-compare.fr">mickael.libanov@smart-compare.fr ou
+                mickael.libanov@gmail.com</a>
+                <br> <b>Adresse postale</b> : 62 Avenue Berthelot, 13006, Marseille
+            </p>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+    <script src="./Docs/Javascripts/navbar.js"></script>
+    <script src="./Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>

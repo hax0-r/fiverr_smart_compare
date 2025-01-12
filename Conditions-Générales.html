@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Compare</title>
+    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex items-center lg:justify-center justify-between px-5">
+        <a href="./index.html" class="flex lg:gap-2 gap-1 md:h-24 h-20 items-center justify-center my-3">
+            <img src="./Docs/Assets/logo.png" class="lg:h-16 h-14" alt="">
+            <h1 class="font-bold lg:text-3xl text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                Smart Compare</h1>
+        </a>
+        <i id="navBar" class="fa-solid fa-bars lg:hidden text-2xl cursor-pointer text-[#19384c]"></i>
+    </div>
+
+    <div class="max-w-[52rem] w-full border border-black rounded-full mx-auto overflow-hidden lg:block hidden">
+
+        <ul class="flex items-center justify-center">
+            <li><a href="./index.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 pl-14">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block px-5 py-3.5 text-sm transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html"
+                    class="block pr-14 px-5 py-3.5 text-sm transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+
+
+    </div>
+
+    <div id="resNav" class="bg-white transition-all duration-500 h-screen z-50 top-0 left-0 fixed overflow-hidden"
+        style="width: 0;">
+        <div class="flex items-center justify-between">
+            <a href="./index.html" class="flex gap-1 md:h-24 h-20 items-center mt-7 px-5">
+                <img src="./Docs/Assets/logo.png" class=" h-14" alt="">
+                <h1 class="font-bold text-lg lg:max-w-none max-w-[6rem] w-full leading-tight text-[#19384c]">
+                    Smart Compare</h1>
+            </a>
+            <div class="mr-5 mt-5">
+                <i id="closeNav" class="fa-solid fa-x text-2xl cursor-pointer text-[#19384c] "></i>
+            </div>
+        </div>
+        <ul class="mt-7">
+            <li><a href="./index.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black text-zinc-600 hover:bg-zinc-50 ">
+                    Banque</a></li>
+            <li><a href="./Pour-les-Pros.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Pour les Pros</a></li>
+            <li><a href="./Assurances.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Assurances</a></li>
+            <li><a href="./Services-bancaires.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50 ">
+                    Services bancaires</a></li>
+            <li><a href="./Notre-Storyline.html"
+                    class="block text-nowrap p-5  transition-all duration-300 hover:text-black  text-zinc-600 hover:bg-zinc-50">
+                    Notre Storyline</a></li>
+            <li><a href="./Contact.html"
+                    class="block text-nowrap  p-5  transition-all duration-300 hover:text-black hover:bg-zinc-50 text-zinc-600">
+                    Contact</a></li>
+        </ul>
+    </div>
+
+    <div class=" p-5 md:mt-10 py-12">
+
+        <div class="max-w-6xl mx-auto w-full">
+
+            <h2 class="text-[#19384cdc] font-bold md:text-4xl text-3xl text-center">Conditions Générales d'Utilisation
+                de
+                <span class="text-[#19384c]"> Smart Compare</span>
+            </h2>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Article 1 – Objet</h2>
+            <p class="text-zinc-700 md:leading-8">Les présentes Conditions Générales d'Utilisation (CGU) régissent
+                l'accès et l'utilisation du site Smart-Compare (ci-après dénommé "le Site"), qui permet aux utilisateurs
+                de comparer diverses offres de services et produits proposés par des tiers. <br><br>
+                En accédant et en utilisant le Site, l'utilisateur accepte sans réserve les présentes CGU.
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Article 2 – Accès au Site</h2>
+            <ul class="text-zinc-700 list-disc space-y-2 pl-5">
+                <li> Le Site est accessible gratuitement à tout utilisateur disposant d'une connexion Internet.</li>
+                <li> Smart-Compare se réserve le droit de suspendre, limiter ou interrompre l'accès au Site pour des
+                    raisons
+                    de maintenance, de mise à jour ou tout autre motif technique.</li>
+                <li> L'utilisateur est responsable de son matériel informatique et de sa connexion Internet pour accéder
+                    au
+                    Site.</li>
+            </ul>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Article 3 – Services Proposés</h2>
+            <ul class="text-zinc-700 list-disc space-y-2 pl-5">
+                <li> Smart-Compare propose un service de comparaison d’offres commerciales, de produits ou de services
+                    dans
+                    divers domaines (ex. : assurance, téléphonie, énergie, etc.).</li>
+                <li> Le Site n’intervient pas en tant que fournisseur ou vendeur des produits et services comparés. Il
+                    agit
+                    uniquement comme intermédiaire en fournissant des informations.</li>
+                <li> Les offres présentées sur le Site proviennent de partenaires tiers. Smart-Compare ne garantit pas
+                    leur
+                    exactitude ou leur disponibilité en temps réel.</li>
+            </ul>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Article 4 – Utilisation du Site</h2>
+            <ul class="text-zinc-700 list-disc space-y-2 pl-5">
+                <li> L'utilisateur s'engage à utiliser le Site dans le respect des lois et règlements en vigueur.</li>
+                <li> Il est interdit d'utiliser le Site à des fins frauduleuses ou pour recueillir des données
+                    personnelles
+                    d'autres utilisateurs.</li>
+                <li> L’utilisateur reconnaît que les résultats de comparaison sont indicatifs et qu’il doit vérifier les
+                    conditions spécifiques de chaque offre auprès du fournisseur concerné.</li>
+            </ul>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">Article 5 – Responsabilité</h2>
+            <ul class="text-zinc-700 list-disc space-y-2 pl-5">
+                <li> Smart-Compare s’efforce de fournir des informations exactes et à jour, mais ne peut garantir
+                    l’exhaustivité ou l’exactitude des données fournies.</li>
+                <li> Smart-Compare décline toute responsabilité en cas de dommage direct ou indirect résultant de
+                    l’utilisation du Site ou des décisions prises à partir des informations fournies.</li>
+                <li> Le Site peut contenir des liens vers des sites tiers. Smart-Compare ne peut être tenu responsable
+                    du
+                    contenu ou des services proposés par ces sites externes.</li>
+            </ul>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">
+                Article 6 – Données Personnelles</h2>
+            <ul class="text-zinc-700 list-disc space-y-2 pl-5">
+                <li> Le traitement des données personnelles collectées sur le Site est réalisé conformément à notre
+                    politique
+                    de confidentialité encadré par la loi RGPD.</li>
+                <li> L’utilisateur dispose d’un droit d’accès, de rectification et de suppression de ses données, qu’il
+                    peut
+                    exercer en contactant Smart-Compare à l’adresse suivante : <a
+                        href="http://smart-compare.fr/contact/"
+                        class="text-blue-500 hover:underline">smart-compare.fr</a></li>
+            </ul>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">
+                Article 7 – Propriété Intellectuelle</h2>
+            <ul class="text-zinc-700 list-disc space-y-2 pl-5">
+                <li> Tous les éléments du Site (textes, images, logos, vidéos, design, etc.) sont protégés par les lois
+                    sur
+                    la propriété intellectuelle.</li>
+                <li> Toute reproduction, représentation ou exploitation non autorisée des éléments du Site est
+                    strictement
+                    interdite.</li>
+            </ul>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">
+                Article 8 – Modification des CGU</h2>
+            <p class="text-zinc-700 ">
+                Smart-Compare se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs
+                seront informés des modifications via une notification sur le Site ou par tout autre moyen
+                approprié.
+            </p>
+            <br><br>
+            <h2 class="   text-[#19384c] text-xl font-medium mb-3">
+                Article 9 – Loi Applicable et Juridiction Compétente</h2>
+            <p class="text-zinc-700 ">
+
+                Les présentes CGU sont régies par le droit français. En cas de litige, les tribunaux compétents seront
+                ceux du ressort du siège social de Smart-Compare, sauf disposition légale contraire.
+                <br><br>
+                Pour toute question relative à ces CGU, vous pouvez nous contacter à l’adresse suivante :
+                <a href="http://smart-compare.fr/contact/" class="text-blue-500 hover:underline">smart-compare.fr</a>
+
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+    <script src="./Docs/Javascripts/navbar.js"></script>
+    <script src="./Docs/Javascripts/footer.js"></script>
+</body>
+
+</html>
